@@ -7,6 +7,9 @@ ul {
 }
 
 .accordion-section {
+  padding: 0px 32px;
+  max-width: 1280px;
+  min-height: 1020px;
 }
 
 .accordion-li-container {
@@ -23,14 +26,19 @@ ul {
 .ac {
 }
 
+.accordion-div-container {
+  max-width: 592px;
+  min-height: 240px;
+}
+
 .accordion-h1-class {
-  font-family: var(--second-family);
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 108px;
   line-height: 115%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--black);
+  color: #292929;
 }
 .accordion-span-class {
   color: #00b068;
@@ -39,7 +47,7 @@ ul {
   background-color: #bcdfd1;
 }
 .ac-trigger {
-  font-family: var(--font-family);
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
@@ -49,7 +57,7 @@ ul {
 .ac-panel {
 }
 .ac-text {
-  font-family: var(--font-family);
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
