@@ -1,2 +1,7 @@
-.benefits {
-}
+.benefit-icon {
+    background-color: rgba(0, 176, 104, 0.1);
+    border-radius: 8px;
+    fill: #00B068; 
+};
+
+
