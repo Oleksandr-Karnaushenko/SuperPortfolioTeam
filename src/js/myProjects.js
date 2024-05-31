@@ -78,11 +78,11 @@ const projectsData = [
   },
   {
     mobile:
-      '../img/my-project-images/juwelry-1x-min.webp 1x, ../img/my-project-images/juwelry-2x-min.webp 2x',
+      '../img/my-project-images/jewelry-1x-min.webp 1x, ../img/my-project-images/jewelry-2x-min.webp 2x',
     tablet:
-      '../img/my-project-images/juwelry-1x-min.webp 1x, ../img/my-project-images/juwelry-2x-min.webp 2x',
+      '../img/my-project-images/jewelry-1x-min.webp 1x, ../img/my-project-images/jewelry-2x-min.webp 2x',
     desktop:
-      '../img/my-project-images/juwelry-1x-min.webp 1x, ../img/my-project-images/juwelry-2x-min.webp 2x',
+      '../img/my-project-images/jewelry-1x-min.webp 1x, ../img/my-project-images/jewelry-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'Chego Jewelry website',
     link: 'https://github.com/',
@@ -110,3 +110,45 @@ const projectsData = [
     link: 'https://github.com/',
   },
 ];
+
+document.addEventListener('DOMContentLoaded', onSection);
+function onSection() {
+  const projects = document.querySelector('.projects');
+  const loadMoreBtn = document.querySelector('.load-more-btn');
+  const perLoad = 3;
+  let startIndex = 0;
+
+  function renderProjects(start, end) {
+    for (let i = start; i < end; i++) {
+      if (i >= projectsData.length) {
+        return;
+      }
+      const project = projectsData[i];
+      const projectElement = document.createElement('li');
+      projectElement.classList.add('project-card');
+      projectElement.innerHTML = `<picture>
+        <source media="(min-width: 1280px)" srcset="${project.desktop}">
+        <source media="(min-width: 768px)" srcset="${project.tablet}">
+        <source media="(max-width: 767px)" srcset="${project.mobile}">
+        <img class="project-image" src="${project.desktop}" alt="${project.description}">
+    </picture>
+    <div class="project-card-descr">
+    <p class="technologies">${project.technologies}</p>
+    <h3 class="project-title">${project.description}</h3>
+    <a class="link" href="${project.link}" target="_blank">Visit<svg class="visit-icon" width="24" height="24"><use href="../img/icons.svg#icon-my-projects-visit"></use></svg></a></div>`;
+      projects.appendChild(projectElement);
+    }
+  }
+
+  function loadMoreProjects() {
+    const remainingProjects = projectsData.length - startIndex;
+    const projectsToShow = Math.min(remainingProjects, perLoad);
+    renderProjects(startIndex, startIndex + projectsToShow);
+    startIndex += projectsToShow;
+    if (startIndex >= projectsData.length) {
+      loadMoreBtn.disabled = true;
+    }
+  }
+  loadMoreBtn.addEventListener('click', loadMoreProjects);
+  loadMoreProjects();
+}
