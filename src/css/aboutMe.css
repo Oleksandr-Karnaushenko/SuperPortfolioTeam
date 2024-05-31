@@ -1,2 +1,80 @@
-.aboutMe {
+.about-me {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+.about-me-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: black;
+}
+
+.about-me-span {
+    color: green;
+}
+
+.about-me-image {
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.aboutme-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 32px;
+    margin-top: 40px;
+}
+
+.about-me-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.aboutme-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.about-me-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-me-link::before {
+    content: "•";
+    color: green;
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+}
+
+.aboutme-text-education {
+    padding-left: 32px;
+}
+
+.aboutme-text-role {
+    padding-left: 24px;
 }
