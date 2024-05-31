@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const accordion = new Accordion('.accordion-container', {
+const accordion = new Accordion('.accordion-ul-container', {
   duration: 400,
   showMultiple: false,
   removeButton: true,
