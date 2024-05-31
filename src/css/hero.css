@@ -24,6 +24,7 @@
 }
 
 .hero-btn {
+  max-width: 320px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +46,7 @@
   color: #292929;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   z-index: 2;
   text-wrap: nowrap;
