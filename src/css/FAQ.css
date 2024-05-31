@@ -1,2 +1,77 @@
-.FAQ {
+.accordion-container {
+  padding: 0px 32px;
+}
+.accordion-li-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-height: 650px;
+  margin-bottom: 69px;
+}
+
+.accordion-ul-container {
+  max-width: 592px;
+}
+
+.accordion-div-container {
+  max-width: 592px;
+  min-height: 240px;
+}
+
+#li-class {
+  border: none;
+  margin-left: 8px;
+}
+
+.accordion-h1-class {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.ac-header {
+  margin: 0;
+  padding: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ac-border-none {
+  border: none;
+}
+
+.accordion-span-class {
+  color: #00b068;
+}
+
+.ac-header-custom {
+  background-color: #bcdfd1;
+  border-radius: 16px 16px 0px 0px;
+}
+
+#ac-trigger-id {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 28px 28px 24px 24px;
+}
+
+.ac-panel {
+  background-color: #bcdfd1;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.ac-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  padding: 0px 28px 24px 24px !important;
 }
