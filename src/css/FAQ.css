@@ -17,7 +17,8 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  max-height: 744px;
+  max-height: 650px;
+  margin-bottom: 69px;
 }
 
 .accordion-container {
@@ -30,7 +31,7 @@ ul {
 }
 
 #li-class {
-  border-radius: 16px;
+  border: none;
   margin-left: 8px;
 }
 
@@ -47,6 +48,11 @@ ul {
 .ac-header {
   margin: 0;
   padding: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ac-border-none {
+  border: none;
 }
 
 .accordion-span-class {
@@ -65,11 +71,11 @@ ul {
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 28px 28px 24px 24px;
 }
 
 .ac-panel {
   background-color: #bcdfd1;
-
   border-radius: 0px 0px 16px 16px;
 }
 
@@ -79,5 +85,5 @@ ul {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  padding-bottom: 28px !important;
+  padding: 0px 28px 24px 24px !important;
 }
