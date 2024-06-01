@@ -1,24 +1,24 @@
 const projectsData = [
   {
-    projectImage: 'src/img/my-project-images/webwallet-1x-min.webp',
+    projectImage: '/img/my-project-images/webwallet-1x-min.webp',
     imgSet:
-      'src/img/my-project-images/webwallet-1x-min.webp 1x, src/img/my-project-images/webwallet-2x-min.webp 2x',
+      '/img/my-project-images/webwallet-1x-min.webp 1x, /img/my-project-images/webwallet-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'Wallet webservice',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
   {
-    projectImage: './src/img/my-project-images/green-1x-min.webp',
+    projectImage: '/img/my-project-images/green-1x-min.webp',
     imgSet:
-      './src/my-project-images/green-1x-min.webp 1x, ./srcimg/my-project-images/green-2x-min.webp 2x',
+      '/img/my-project-images/green-1x-min.webp 1x, img/my-project-images/green-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'Green Harvest online store',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
   {
-    projectImage: '../src/img/my-project-images/english-1x-min.webp',
+    projectImage: '/img/my-project-images/english-1x-min.webp',
     imgSet:
-      '../src/img/my-project-images/english-1x-min.webp 1x, ../src/img/my-project-images/english-2x-min.webp 2x',
+      '/img/my-project-images/english-1x-min.webp 1x, /img/my-project-images/english-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'English Exellence webservice',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
