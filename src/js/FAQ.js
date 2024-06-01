@@ -7,24 +7,42 @@ const accordion = new Accordion('.accordion-ul-container', {
   removeButton: true,
 });
 
+function handleAccordionToggle(header) {
+  const isActive = header.classList.toggle('ac-header-custom');
+  header.classList.toggle('ac-border-none', isActive);
+  const svgElement = header.querySelector('.icon-FAQ-arrow');
+  if (svgElement) {
+    svgElement.classList.toggle('rotated', isActive);
+  }
+}
+
 document.querySelectorAll('.ac-trigger').forEach(trigger => {
   trigger.addEventListener('click', event => {
-    document.querySelectorAll('.ac-header').forEach(header => {
-      header.classList.remove('ac-header-custom');
-      header.classList.remove('ac-border-none'); // Видалення класу, коли фокус не на елементі
-    });
+    const currentHeader = event.target.closest('.ac-header');
+    if (currentHeader) {
+      const previousActiveHeader = document.querySelector(
+        '.ac-header.ac-header-custom'
+      );
+      if (previousActiveHeader && previousActiveHeader !== currentHeader) {
+        handleAccordionToggle(previousActiveHeader);
+      }
+      handleAccordionToggle(currentHeader);
+    }
+  });
+});
 
-    const header = event.target.closest('.ac-header');
+document.querySelectorAll('.ac').forEach(item => {
+  item.addEventListener('accordionjs:open', event => {
+    const header = event.target.querySelector('.ac-header');
     if (header) {
-      header.classList.add('ac-header-custom');
-      header.classList.add('ac-border-none');
+      handleAccordionToggle(header);
     }
   });
 
-  trigger.addEventListener('blur', () => {
-    const header = trigger.closest('.ac-header');
+  item.addEventListener('accordionjs:close', event => {
+    const header = event.target.querySelector('.ac-header');
     if (header) {
-      header.classList.remove('ac-border-none');
+      handleAccordionToggle(header);
     }
   });
 });
