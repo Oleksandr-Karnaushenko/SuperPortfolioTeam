@@ -2,7 +2,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  max-height: 1300px;
+  min-height: 744px;
+  margin-bottom: 60px;
 }
 
 .accordion-ul-container {
@@ -10,13 +11,13 @@
 }
 
 .accordion-div-container {
-  max-width: 592px;
-  min-height: 240px;
+  max-width: 230px;
+  min-height: 192px;
+  margin-bottom: 40px;
 }
 
 ul .ac {
   border: none;
-  margin-left: 8px;
 }
 
 .accordion-h1-class {
@@ -55,9 +56,8 @@ ul .ac .ac-trigger {
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 28px 28px 24px 24px;
+  padding: 24px 28px 24px 24px;
 }
-
 .ac-panel {
   background-color: #bcdfd1;
   border-radius: 0px 0px 16px 16px;
@@ -72,12 +72,34 @@ ul .ac .ac-trigger {
   padding: 0px 28px 24px 24px;
 }
 
+.accordion-li-container .ac-trigger {
+  padding-right: 16px;
+}
+.icon-FAQ-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.icon-FAQ-arrow.rotated {
+  transform: translateY(-50%) rotate(360deg);
+}
+
+.ac .ac-trigger::after {
+  display: none;
+}
 /* tablet */
 @media screen and (min-width: 768px) {
   .accordion-li-container {
     margin-top: 60px;
     margin-bottom: 120px;
+    min-height: 0px;
   }
+
   .accordion-h1-class {
     font-size: 108px;
     line-height: 115%;
@@ -93,18 +115,16 @@ ul .ac .ac-trigger {
     line-height: 160%;
     letter-spacing: 0.03em;
   }
-
-  .accordion-div-container {
-    max-width: 704px;
-    min-height: 240px;
-  }
 }
 
 /* laptop */
 @media screen and (min-width: 1280px) {
   .accordion-li-container {
-    max-height: 610px;
+    max-height: 600px;
     margin-bottom: 69px;
+  }
+  .container.accordion-li-container .ac-trigger {
+    padding-right: 56px;
   }
 
   .accordion-h1-class {
@@ -122,5 +142,6 @@ ul .ac .ac-trigger {
     font-size: 20px;
     line-height: 160%;
     letter-spacing: 0.03em;
+    padding-right: 56px;
   }
 }
