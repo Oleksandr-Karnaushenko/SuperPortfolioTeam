@@ -5,15 +5,11 @@
     font-size: 52px;
     letter-spacing: 1.8px;
     line-height: 64px;
+    margin-top: 50px;
 }
 
 .benefit-title .benefit-highlight {
     color: #00C389; 
-    margin-bottom: 40px;
-    font-family: Impact;
-    font-size: 52px;
-    letter-spacing: 1.8px;
-    line-height: 64px;
 }
 
 .benefit-list-item {
@@ -32,7 +28,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    fill: #00B068;
+    fill: none;
+    stroke: #00B068;
     margin-bottom: 16px;
 }
 
@@ -41,7 +38,6 @@
     font-size: 18px;
     letter-spacing: 0.5px;
     line-height: 28px;
-    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -54,7 +50,6 @@
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 24px;
-    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
@@ -68,30 +63,17 @@
 
 @media screen and (min-width: 768px) {
     .benefit-title {
-        color: #292929;
         margin-bottom: 0px;
-        font-family: Impact;
         font-size: 108px;
-        letter-spacing: 1.8px;
         line-height: 124px;
     }
     .benefit-title .benefit-highlight {
         color: #00C389; 
         margin-bottom: 40px;
-        font-family: Impact;
-        font-size: 108px;
-        letter-spacing: 1.8px;
-        line-height: 124px;
     }
     .benefit-list-topic {
-        margin-bottom: 16px;
         font-size: 20px;
-        letter-spacing: 0.5px;
         line-height: 32px;
-        font-display: swap;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
     }
     .benefit-list {
         display: grid;
@@ -118,15 +100,7 @@
     }
     .benefit-list-text {
         margin: 0;
-        color: #292929;
         margin-bottom: 0px; 
-        font-size: 16px;
-        letter-spacing: 0.2px;
-        line-height: 24px;
-        font-display: swap;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
     }
 }
 
@@ -143,5 +117,8 @@
     .benefit-list-item:nth-child(3),
     .benefit-list-item:nth-child(4) {
         grid-column: span 1;
+    }
+    .benefit-title {
+        max-width: 690px;
     }
 }
