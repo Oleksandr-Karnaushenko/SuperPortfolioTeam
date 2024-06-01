@@ -33,7 +33,7 @@
 
 .hero-icon-arrow {
   stroke-width: 2px;
-  stroke: #00b068;
+  fill: #00b068;
   margin-right: 12px;
 }
 
@@ -176,13 +176,22 @@
     display: block;
   }
 
+  .hero-wrap-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
   .hero-btn {
     margin-left: 72px;
   }
 
+  .hero-icon-arrow {
+    margin-right: 123px;
+  }
+
   .hero-text {
     max-width: 592px;
-    padding-bottom: 80px;
-    padding-top: 0;
+    padding: 0;
   }
 }
