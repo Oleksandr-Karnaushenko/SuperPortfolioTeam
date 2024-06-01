@@ -154,3 +154,35 @@
     gap: 40px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    margin-bottom: 82px;
+  }
+
+  .hero-wrap-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 72px;
+  }
+
+  .hero-title {
+    max-width: 552px;
+    padding-bottom: 80px;
+  }
+
+  .is-hidden {
+    display: block;
+  }
+
+  .hero-btn {
+    margin-left: 72px;
+  }
+
+  .hero-text {
+    max-width: 592px;
+    padding-bottom: 80px;
+    padding-top: 0;
+  }
+}
