@@ -3,8 +3,6 @@
     padding-bottom: 80px;
 }
 
-
-
 .about-me-title {
     font-family: var(--second-family);
     font-weight: 400;
@@ -33,7 +31,7 @@
     text-transform: uppercase;
     color: black;
     margin-bottom: 32px;
-
+    margin-top: 40px;
 }
 
 .about-me-text {
@@ -66,21 +64,35 @@
     gap: 12px;
 }
 
-.about-me-link::before {
-    content: "•";
-    color: green;
-    border-radius: 1px;
+.about-me-link {
+    display: flex;
+    gap: 8px;
+    width: 320px;
+
+}
+
+.about-me-svg {
+    margin: 10px;
+    display: flex;
+    fill: #00B068;
+    height: 4px;
+}
+
+.about-me-svg-icons {
+    margin: 10px 6px;
+    display: flex;
+    fill: #00B068;
     width: 4px;
     height: 4px;
-    position: absolute;
 }
 
 .aboutme-text-education {
-    padding-left: 32px;
+    padding-left: 8px;
 }
 
 .aboutme-text-role {
-    padding-left: 24px;
+    padding-left: 8px;
+
 }
 
 /* --------768px---------- */
@@ -90,6 +102,10 @@
     .about-me {
         padding-top: 124px;
         padding-bottom: 124px;
+    }
+
+    .aboutme-title {
+        margin-top: 0;
     }
 
     .about-me-title {
