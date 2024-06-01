@@ -32,11 +32,8 @@
 
 .bg-image {
   background-image: url(/img/bg-images/bgi-mob.webp);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
-  z-index: -1;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
@@ -61,7 +58,7 @@
 }
 
 .container {
-  max-width: 375px;
+  max-width: 360px;
   margin: 0 auto;
   padding: 0 20px;
 }
