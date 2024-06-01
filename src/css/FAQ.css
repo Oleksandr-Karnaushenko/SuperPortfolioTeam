@@ -120,7 +120,7 @@ ul .ac .ac-trigger {
 /* laptop */
 @media screen and (min-width: 1280px) {
   .accordion-li-container {
-    max-height: 600px;
+    max-height: 590px;
     margin-bottom: 69px;
   }
   .container.accordion-li-container .ac-trigger {
