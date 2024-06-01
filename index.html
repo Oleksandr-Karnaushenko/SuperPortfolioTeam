@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/SuperPortfolioTeam/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-8f98089f.js">
     <link rel="stylesheet" href="/SuperPortfolioTeam/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-3c2396fe.css">
+    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-500fcc71.css">
   </head>
   <body class="bg-image">
     <header id="header" class="header">
@@ -89,61 +89,77 @@
       <section id="aboutMe" class="container">
     <div class="about-me">
         <h2 class="about-me-title">ABOUT <span class="about-me-span">ME</span></h2>
-        <img class="about-me-image" width="320" height="374" src="../img/about-me/about-me-mob.webp" alt="my photo">
-        <div>
-            <h3 class="aboutme-title">BIO</h3>
-            <p class="about-me-text">I'm Lloyd Jefferson, a talented programmer specializing in software development. My
-                expertise spans
-                various
-                programming
-                languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on seeking
-                unconventional
-                and creative solutions to problems, leveraging a high level of analytical skills to effectively tackle
-                even
-                the most
-                challenging tasks.</p>
+        <div class="about-me-media">
+            <picture>
+                <source srcset="/SuperPortfolioTeam/assets/about-me-mob-951e87a2.webp 1x, /SuperPortfolioTeam/assets/about-me-mob-2x-d83e89f5.webp 2x" media="(max-width: 768px)" width="320" height="374" />
+                <source srcset="/SuperPortfolioTeam/assets/about-me-tab-a5c3fde4.webp 1x, /SuperPortfolioTeam/assets/about-me-tab-2x-f668a8ca.webp 2x" media="(min-width: 768px) and (max-width: 1280px)" width="336" height="392" />
+                <source srcset="/SuperPortfolioTeam/assets/about-me-des-5b01b95b.webp 1x, /SuperPortfolioTeam/assets/about-me-des-2x-e3acc839.webp 2x" media="(min-width: 1280px) and (max-width: 1440px)" width="384" height="448" />
+                <img class="about-me-image" src="/SuperPortfolioTeam/assets/about-me-mob-951e87a2.webp" alt="my photo" width="320"
+                    height="374" />
+            </picture>
+            <div class="about-me-bio">
+                <h3 class="aboutme-title">BIO</h3>
+                <p class="about-me-text">I'm Lloyd Jefferson, a talented programmer specializing in software
+                    development. My
+                    expertise spans
+                    various
+                    programming
+                    languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on
+                    seeking
+                    unconventional
+                    and creative solutions to problems, leveraging a high level of analytical skills to effectively
+                    tackle
+                    even
+                    the most
+                    challenging tasks.</p>
 
-            <p class="aboutme-text">Adaptable to both independent and team-oriented work, I collaborate seamlessly with
-                colleagues,
-                exchanging
-                ideas and
-                finding optimal solutions. My professional maturity enables me to navigate challenges and stressful
-                situations with a
-                calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I
-                actively
-                engage in
-                studying new technologies and practices to stay current with the latest innovations in the field.</p>
+                <p class="aboutme-text">Adaptable to both independent and team-oriented work, I collaborate seamlessly
+                    with
+                    colleagues,
+                    exchanging
+                    ideas and
+                    finding optimal solutions. My professional maturity enables me to navigate challenges and stressful
+                    situations with a
+                    calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I
+                    actively
+                    engage in
+                    studying new technologies and practices to stay current with the latest innovations in the field.
+                </p>
+            </div>
         </div>
-        <div>
-            <h3 class="aboutme-title">EDUCATION</h3>
-            <ul class="about-me-list">
-                <li class="about-me-link">
-                    <p class="aboutme-text-education">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                        York</p>
-                </li>
-                <li class="about-me-link">
-                    <p class="aboutme-text-education">2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                        School, New York
-                    </p>
-                </li>
-                <li class="about-me-link">
-                    <p class="aboutme-text-education">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="aboutme-title">ROLE</h3>
-            <ul class="about-me-list">
-                <li class="about-me-link">
-                    <p class="aboutme-text-role">Frontend development</p>
-                </li>
-                <li class="about-me-link">
-                    <p class="aboutme-text-role">HeadlessCMS, Wordpress</p>
-                </li>
-                <li class="about-me-link">
-                    <p class="aboutme-text-role">Blender (enjoy)</p>
-                </li>
-            </ul>
+        <div class="about-me-education-role">
+            <div class="about-me-education">
+                <h3 class="aboutme-title">EDUCATION</h3>
+                <ul class="about-me-list">
+                    <li class="about-me-link">
+                        <p class="aboutme-text-education">2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+                            New
+                            York</p>
+                    </li>
+                    <li class="about-me-link">
+                        <p class="aboutme-text-education">2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                            School, New York
+                        </p>
+                    </li>
+                    <li class="about-me-link">
+                        <p class="aboutme-text-education">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="aboutme-title">ROLE</h3>
+                <ul class="about-me-list">
+                    <li class="about-me-link">
+                        <p class="aboutme-text-role">Frontend development</p>
+                    </li>
+                    <li class="about-me-link">
+                        <p class="aboutme-text-role">HeadlessCMS, Wordpress</p>
+                    </li>
+                    <li class="about-me-link">
+                        <p class="aboutme-text-role">Blender (enjoy)</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
