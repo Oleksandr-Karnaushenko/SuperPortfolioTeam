@@ -4,7 +4,7 @@ const projectsData = [
     imgSet:
       '/img/my-project-images/webwallet-1x-min.webp 1x, /img/my-project-images/webwallet-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
-    description: 'Wallet webservice ',
+    description: 'Wallet webservice',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
   {
@@ -68,7 +68,7 @@ const projectsData = [
     imgSet:
       '/img/my-project-images/energy-1x-min.webp 1x, /img/my-project-images/energy-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
-    description: 'Energy Flow webservice ',
+    description: 'Energy Flow webservice',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
   {
@@ -81,40 +81,49 @@ const projectsData = [
   },
 ];
 
-const projects = document.querySelector('.projects');
+const projectsContainer = document.querySelector('.projects');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 const perLoad = 3;
 let startIndex = 0;
 
-function renderProjects(start, end) {
-  for (let i = start; i < end; i++) {
-    if (i >= projectsData.length) {
-      return;
-    }
-    const project = projectsData[i];
-    const projectElement = document.createElement('li');
-    projectElement.classList.add('project-card');
-    projectElement.innerHTML = `
-    <img class="project-image"
-    srcset="${project.imgSet}"
-    src="${project.projectImage}" alt="${project.description}">
-    <div class="project-card-descr">
-    <p class="technologies">${project.technologies}</p>
-    <h3 class="project-title">${project.description}</h3>
-    <a class="link" href="${project.link}" target="_blank">Visit<svg class="visit-icon" width="24" height="24"><use href="/img/icons.svg#icon-my-projects-visit"></use></svg></a></div>`;
-    projects.appendChild(projectElement);
-  }
+function renderProjects(startIndex, endIndex) {
+  const markup = projectsData
+    .slice(startIndex, endIndex)
+    .reduce((html, project) => {
+      return (
+        html +
+        `<li class="project-card">
+          <img class="project-image"
+             srcset="${project.imgSet}"
+             src="${project.projectImage}" 
+             alt="${project.description}">
+            <div class="project-card-descr">
+              <p class="technologies">${project.technologies}</p>
+              <div class="line-title-link"
+              <h3 class="project-title">${project.description}</h3>
+              <a class="link" href="${project.link}" target="_blank">Visit
+              <svg class="visit-icon" width="24" height="24">
+              <use href="/img/icons.svg#icon-my-projects-visit"></use>
+              </svg>
+              </a>
+              </div>
+            </div>
+        </li>`
+      );
+    }, '');
+  projectsContainer.insertAdjacentHTML('beforeend', markup);
 }
 
 function loadMoreProjects() {
   const remainingProjects = projectsData.length - startIndex;
   const projectsToShow = Math.min(remainingProjects, perLoad);
-  renderProjects(startIndex, startIndex + projectsToShow);
+  let endIndex = startIndex + projectsToShow;
+  renderProjects(startIndex, endIndex);
   startIndex += projectsToShow;
   if (startIndex >= projectsData.length) {
-    loadMoreBtn.disabled = true;
+    loadMoreBtn.classList.add('visually-hidden');
   }
 }
-document.addEventListener('DOMContentLoaded', loadMoreProjects);
 
+document.addEventListener('DOMContentLoaded', loadMoreProjects);
 loadMoreBtn.addEventListener('click', loadMoreProjects);
