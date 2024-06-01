@@ -1,2 +1,117 @@
-.myProjects {
+.my-projects {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.projects-title {
+  text-align: center;
+  font-family: 'Impact', sans-serif;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.my {
+  color: #00b068;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.project-card {
+  max-width: 320px;
+}
+.project-card-descr {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-image {
+  border-radius: 16px;
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.technologies {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  background-color: #e4e5e6;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 125px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.link:hover {
+  background-color: #bbb;
+}
+
+.visit-icon {
+  stroke-width: 2px;
+  stroke: #00b068;
+}
+
+.load-more-btn {
+  display: flex;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  background-color: transparent;
+}
+.load-more-btn:hover {
+  color: #00b068;
+}
+
+.load-more-btn:disabled {
+  cursor: not-allowed;
+  color: #e4e5e6;
+}
+
+.btn-line {
+  border-bottom: 2px solid #00b068;
+}
+
+/*<----------768px--------->*/
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 1280px) {
 }
