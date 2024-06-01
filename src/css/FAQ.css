@@ -72,17 +72,55 @@ ul .ac .ac-trigger {
   padding: 0px 28px 24px 24px;
 }
 
-/*  */
+/* tablet */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 744px;
+  .accordion-li-container {
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+  .accordion-h1-class {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+
+  .accordion-ul-container {
+    max-width: 704px;
+  }
+  ul .ac .ac-trigger {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+  }
+
+  .accordion-div-container {
+    max-width: 704px;
+    min-height: 240px;
   }
 }
 
+/* laptop */
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1220px;
+  .accordion-li-container {
+    max-height: 610px;
+    margin-bottom: 69px;
+  }
+
+  .accordion-h1-class {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+  .accordion-ul-container {
+    max-width: 592px;
+  }
+
+  ul .ac .ac-trigger {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
   }
 }
-
-/*  */
