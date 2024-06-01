@@ -147,8 +147,6 @@ function loadMoreProjects() {
     loadMoreBtn.disabled = true;
   }
 }
-document.addEventListener('DOMContentLoaded', onSection);
-function onSection() {
-  loadMoreBtn.addEventListener('click', loadMoreProjects);
-  loadMoreProjects();
-}
+document.addEventListener('DOMContentLoaded', loadMoreProjects);
+
+loadMoreBtn.addEventListener('click', loadMoreProjects);
