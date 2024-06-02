@@ -1,6 +1,6 @@
 .my-projects {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  display: flex;
 }
 
 .projects-title {
@@ -10,13 +10,13 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: #00b068;
   margin-bottom: 40px;
   text-align: center;
 }
 
-.my {
-  color: #00b068;
+.project-title-span {
+  color: #292929;
 }
 
 .projects {
@@ -33,6 +33,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #292929;
 }
 
 .line-title-link {
@@ -46,32 +48,26 @@
 }
 
 .project-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
 }
 
 .technologies {
-  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
 }
 
 .link {
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   background-color: #e4e5e6;
   border-radius: 8px;
   padding: 12px 24px;
@@ -87,12 +83,13 @@
 }
 
 .visit-icon {
-  stroke-width: 2px;
   stroke: #00b068;
 }
 
 .load-more-btn {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   padding: 12px 24px;
   border: none;
@@ -105,12 +102,14 @@
   background-color: transparent;
   margin-top: 40px;
 }
+
 .load-more-btn:hover {
   color: #00b068;
 }
 
-.btn-line {
-  border-bottom: 2px solid #00b068;
+.btn-line-icon {
+  fill: #00b068;
+  width: 106px;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,6 +144,9 @@
   .load-more-btn {
     font-size: 20px;
   }
+  .btn-line-icon {
+    width: 117px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -155,6 +157,6 @@
     gap: 80px;
   }
   .project-card {
-    min-width: 1008px;
+    max-width: 1008px;
   }
 }
