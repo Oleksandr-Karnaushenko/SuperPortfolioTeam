@@ -32,6 +32,7 @@
   --green-t-l: #00b068;
   --gray-l: #e4e5e6;
   --light-accent-l: #bcdfd1;
+  --gray-h-l: #bbbbbb;
 
   /* dark-colors */
   --bg-d: #1e2023;
@@ -39,6 +40,7 @@
   --green-t-d: #14c57c;
   --gray-d: #2a2d32;
   --green-f-d: #204136;
+  --gray-h-d: #3b3f45;
 
   /* variables */
   --background: var(--bg-l);
@@ -46,6 +48,8 @@
   --green-text-color: var(--green-t-l);
   --gray-color-bg: var(--gray-l);
   --green-color-bg: var(--light-accent-l);
+  --green-hover-color: #009156;
+  --gray-hover-color: var(--gray-h-l);
 }
 
 body {
