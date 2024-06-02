@@ -5,7 +5,7 @@
     font-size: 52px;
     letter-spacing: 1.8px;
     line-height: 64px;
-    margin-top: 80px;
+    padding-top: 40px;
 }
 
 .benefit-title .benefit-highlight {
@@ -63,6 +63,7 @@
 
 .benefit-list-item:last-child {
     margin-bottom: 0px;
+    padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -70,7 +71,7 @@
         margin-bottom: 0px;
         font-size: 108px;
         line-height: 124px;
-        margin-top: 124px;
+        padding-top: 62px;
     }
     .benefit-title .benefit-highlight {
         color: #00C389; 
@@ -107,6 +108,9 @@
         margin: 0;
         margin-bottom: 0px; 
     }
+    .benefit-list-item:last-child {
+    padding-bottom: 62px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -124,9 +128,10 @@
     .benefit-list-item:nth-child(4) {
         grid-column: span 1;
         margin-bottom: 0px;
+        padding-bottom: 82px ;
     }
     .benefit-title {
         max-width: 690px;
-        margin-top: 164px;
+        padding-top: 82px;
     }
 }
