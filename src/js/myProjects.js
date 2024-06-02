@@ -1,26 +1,23 @@
-const pathUrl = new URL('/img/my-project/', import.meta.url).href;
+const pathUrl = new URL('../img/my-project-images', import.meta.url).href;
 
 const projectsData = [
   {
-    projectImage: '/img/my-project-images/webwallet-1x-min.webp',
-    imgSet:
-      '/img/my-project-images/webwallet-1x-min.webp 1x, /img/my-project-images/webwallet-2x-min.webp 2x',
+    projectImage: '/webwallet-1x-min.webp',
+    imgSet: '/webwallet-1x-min.webp 1x, /webwallet-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'Wallet webservice',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
   {
-    projectImage: '/img/my-project-images/green-1x-min.webp',
-    imgSet:
-      '/img/my-project-images/green-1x-min.webp 1x, img/my-project-images/green-2x-min.webp 2x',
+    projectImage: '/green-1x-min.webp',
+    imgSet: '/green-1x-min.webp 1x, /green-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'Green Harvest online store',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
   {
-    projectImage: '/img/my-project-images/english-1x-min.webp',
-    imgSet:
-      '/img/my-project-images/english-1x-min.webp 1x, /img/my-project-images/english-2x-min.webp 2x',
+    projectImage: '/english-1x-min.webp',
+    imgSet: '/english-1x-min.webp 1x, /english-2x-min.webp 2x',
     technologies: 'React, JavaScript, Node JS, Git',
     description: 'English Exellence webservice',
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
