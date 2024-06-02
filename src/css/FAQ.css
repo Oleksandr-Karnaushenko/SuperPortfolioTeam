@@ -6,12 +6,14 @@
 }
 
 .faq-container {
-  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /*  */
 ul .ac {
   border: none;
+  background-color: #f0f0f0;
 }
 
 .accordion-h2-class {
@@ -89,10 +91,8 @@ ul .ac .ac-trigger {
 /* tablet */
 @media screen and (min-width: 768px) {
   .faq-container {
-    margin-top: 124px;
-  }
-  .accordion-container {
-    min-height: 0px;
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 
   .accordion-h2-class {
@@ -115,7 +115,8 @@ ul .ac .ac-trigger {
 /* laptop */
 @media screen and (min-width: 1280px) {
   .faq-container {
-    margin-top: 164px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
   .accordion-container {
     max-height: 590px;
