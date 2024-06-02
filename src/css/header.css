@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 2rem; /* Padding from top of the screan */
 }
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
 
 .header-elements {
   display: flex;
@@ -36,6 +40,7 @@ html {
   width: 100vw;
   height: 100vh;
 
+  background-color: #f0f0f0;
   background-image: url(/img/bg-images/bgi-mob.webp);
   background-size: cover;
   background-position: center;
