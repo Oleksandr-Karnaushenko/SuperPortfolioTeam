@@ -1,3 +1,5 @@
+const pathUrl = new URL('/img/my-project/', import.meta.url).href;
+
 const projectsData = [
   {
     projectImage: '/img/my-project-images/webwallet-1x-min.webp',
@@ -94,8 +96,8 @@ function renderProjects(startIndex, endIndex) {
         html +
         `<li class="project-card">
           <img class="project-image"
-             srcset="${project.imgSet}"
-             src="${project.projectImage}" 
+             srcset="${pathUrl + project.imgSet}"
+             src="${pathUrl + project.projectImage}" 
              alt="${project.description}">
             <div class="project-card-descr">
               <p class="technologies">${project.technologies}</p>
