@@ -88,6 +88,10 @@ ul .ac .ac-trigger {
 .ac .ac-trigger::after {
   display: none;
 }
+
+.img-class {
+  display: none;
+}
 /* tablet */
 @media screen and (min-width: 768px) {
   .faq-container {
@@ -110,6 +114,9 @@ ul .ac .ac-trigger {
     line-height: 160%;
     letter-spacing: 0.03em;
   }
+  .img-class {
+    display: none;
+  }
 }
 
 /* laptop */
@@ -119,7 +126,7 @@ ul .ac .ac-trigger {
     padding-bottom: 82px;
   }
   .accordion-container {
-    max-height: 590px;
+    max-height: 610px;
   }
   .container.accordion-li-container .ac-trigger {
     padding-right: 56px;
@@ -143,5 +150,13 @@ ul .ac .ac-trigger {
     line-height: 160%;
     letter-spacing: 0.03em;
     padding-right: 56px;
+  }
+  .img-class {
+    display: block;
+    max-width: 526px;
+    height: 408px;
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
