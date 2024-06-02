@@ -1,11 +1,9 @@
 .about-me {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-top: 80px;
+
 }
 
 .about-me-title {
-    font-family: var(--second-family);
-    font-weight: 400;
     font-size: 52px;
     line-height: 1.23;
     letter-spacing: 0.03em;
@@ -23,7 +21,6 @@
 }
 
 .aboutme-title {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 32px;
     line-height: 1.25;
@@ -35,22 +32,14 @@
 }
 
 .about-me-text {
-    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: black;
-    margin-bottom: 24px;
-}
-
-.aboutme-text {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     margin-bottom: 40px;
 }
 
@@ -100,8 +89,7 @@
 @media screen and (min-width: 768px) {
 
     .about-me {
-        padding-top: 124px;
-        padding-bottom: 124px;
+        margin-top: 124px;
     }
 
     .aboutme-title {
@@ -137,7 +125,6 @@
     .about-me-education {
         width: 336px;
         height: 280px;
-
     }
 
     .about-me-list {
@@ -151,8 +138,7 @@
 @media screen and (min-width: 1280px) {
 
     .about-me {
-        padding-top: 164px;
-        padding-bottom: 164px;
+        margin-top: 164px;
     }
 
     .about-me-media {
