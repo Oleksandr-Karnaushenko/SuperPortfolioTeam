@@ -1,5 +1,11 @@
 .hero {
-  margin-top: 16px;
+  padding-top: 112px;
+  padding-bottom: 40px;
+  background-image: url(/img/bg-images/hero-decor-bg-mob.webp);
+  background-color: transparent;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right top 15px;
 }
 
 .hero-title {
@@ -8,14 +14,13 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-l);
   text-align: left;
-  padding-top: 96px;
   padding-bottom: 40px;
 }
 
 .hero-title span {
-  color: #00b068;
+  color: var(--green-t-l);
 }
 
 .is-hidden {
@@ -32,7 +37,7 @@
 
 .hero-icon-arrow {
   stroke-width: 2px;
-  fill: #00b068;
+  fill: var(--green-t-l);
   margin-right: 12px;
 }
 
@@ -42,7 +47,7 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-l);
   position: absolute;
   top: 50%;
   left: 43%;
@@ -55,14 +60,16 @@
   border-radius: 16px;
   width: 165px;
   height: 92px;
-  background-color: rgba(0, 176, 104, 0.2);
+  background-color: var(--green-t-l);
+  opacity: 0.2;
   z-index: 1;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:focus .hero-rectangle,
 .hero-btn:hover .hero-rectangle {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: var(--green-t-l);
+  opacity: 0.6;
 }
 
 .hero-text {
@@ -71,20 +78,20 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-l);
   padding-top: 40px;
   padding-bottom: 56px;
   text-align: left;
 }
 
 .hero-text span {
-  color: #00b068;
+  color: var(--green-t-l);
 }
 
 .hero-social {
   margin-top: 16px;
   padding: 32px 0px;
-  background-color: #e4e5e6;
+  background-color: var(--gray-l);
 }
 
 .hero-social-list {
@@ -100,25 +107,26 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--text-l);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-social-link:focus,
 .hero-social-link:hover {
-  color: #00b068;
+  color: var(--green-t-l);
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    margin-top: 0;
+    padding-top: 88px;
+    padding-bottom: 62px;
+    background-image: url(/img/bg-images/hero-decor-bg-tab.webp);
   }
 
   .hero-title {
     font-size: 124px;
     line-height: 1.19355;
     letter-spacing: 0.01em;
-    padding-top: 72px;
     padding-bottom: 60px;
   }
 
@@ -154,16 +162,22 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 88px;
+    padding-bottom: 82px;
+    background-image: url(/img/bg-images/hero-decor-bg-des.webp);
+  }
+
   .hero-wrap-title {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 72px;
+    padding-bottom: 80px;
   }
 
   .hero-title {
     max-width: 552px;
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
 
   .is-hidden {
