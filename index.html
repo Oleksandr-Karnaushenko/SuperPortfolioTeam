@@ -12,9 +12,9 @@
     />
     
     <script type="module" crossorigin src="/SuperPortfolioTeam/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-8f98089f.js">
-    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-49b45ebb.css">
+    <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-13495c4b.js">
+    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/vendor-f53b51ae.css">
+    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-905ac9ab.css">
   </head>
   <body class="bg-image">
     <header id="header" class="header">
@@ -574,52 +574,60 @@
 
       <section id="reviews" class="reviews container">
   <h2 class="reviews-title">reviews</h2>
-  <div class="review-container">
-    <ul class="reviews-list">
-      <li class="reviews-item">
+  <div class="swiper">
+    <ul class="reviews-list swiper-wrapper">
+      <li class="reviews-item swiper-slide">
         <p class="reviews-text">
           Work with was extraordinary! He turned out to be a very competent and
           responsible specialist. The projects were completed on time and the
           result exceeded my expectations
         </p>
         <div class="reviewer-data">
-          <picture>
-            <source srcset="" />
-            <img
-              src=""
-              alt="Natalia Shevchenko"
-              loading="lazy"
-              width="40"
-              height="40"
-              class="reviews-foto"
-            />
-          </picture>
+          <img
+            src="data:image/webp;base64,UklGRsgCAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSCgBAAABkGtr27FH7/fFtir7AGybvVFm/W2M0jZrJ7U627YrW/M9w/+9M0cQERPA+AUmsv9R0TYqLi7RS1/4JkWzxhsiieiywlL4DiFkn/59JVPEKQRdk9zVON1x4oxGicXEO4bS2eD6MgV5EX8mqBMwgNG8AuypQJIJuKUEGUZ0M6TZC2JYCRFPyDM1RCHk1higOAr5MAOYrEAkLYD5A+RNERDwA3Ip8okZBF1i/Ir1mF6A6igmG2CwiAkDWJ1B3k0Ank+QC0VAggTZF/jEOoKWMH7FKcgPV4DRCWREACS+I16cGL9GwQ9EFwPqtxLyx+xAnrPIwTB/vR9KkE93CUZEWXIxVoWrYrzJR5hbGeO36EJU6TKoRdeRfLeFugzvUzi4dCtJt0eDMh/GCVZQOCB6AQAAEAgAnQEqKAAoAD6RQJ1LJaMioac4CACwEglnAMohYmwBGgwwTMWggJJXr8SZiUKdyfa5AIpUhIt3/e1s40gO3fBN0L5LuAL00AD+/vZDUQ9z/6dIipTdsw+l0rUrHFMFXO9BtRQaRr0tF58W3B01/I+Cupp1kshFvDAkDYXdehnKb6dcGDWp4p9UQXQ+BsNQ9YnMiLa+/C3STtvelsDt4qeELFAtQQsScUL6IlLjjbP6v07D2AIe5R4NNRGc6uexIiP2qs23FHQYbr2BPAhLePeixFVfjXGhH7Khc7hemhhTiczURP7LxQZrRTl2kLIYOcpHC/WkPZAeDLCsohSTcTi00ngrSDUZ1473GLU5uFr+rFCsfpcgjBTa0acKajiEsjSQeaGIzHyaKjZ0zn1MNLV04N6vkfvettbA3i2uT+VpXmBLNO+E53j8TKYNuZRMfJ0JRAJC/6yyVHkwHI95i4xAC8PrEBd1uH0Xxj2FyKJlGvMY8vyEAAAA"
+            alt="Natalia Shevchenko"
+            loading="lazy"
+            width="40"
+            height="40"
+            class="reviews-foto"
+          />
           <p class="reviewer-name">Natalia Shevchenko</p>
         </div>
       </li>
-      <li class="reviews-item">
+      <li class="reviews-item swiper-slide">
         <p class="reviews-text">
           I have the honor to recommend him as an exceptional professional in
           his field. His knowledge and expertise are undeniable. Cooperation
           with him always brings impressive results.
         </p>
         <div class="reviewer-data">
-          <picture>
-            <source srcset="" />
-            <img
-              src=""
-              alt="Dmytro Nazarenko"
-              loading="lazy"
-              width="40"
-              height="40"
-              class="reviews-foto"
-            />
-          </picture>
+          <img
+            src="data:image/webp;base64,UklGRsACAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSB0BAAABkGtr27FHb2zbtjrbxhk4pVnZtro/qWw7rd2y9Nh6hu/zvHMEETEBDG2VVWbJ/kMp+7V3AF064twf4M+bJFFuL+Gfw8pCZOaAc0VBhOcjD4wIkN4F7u+hdGaXfHCrT+bzAwESsiHAfjEikn5AQTqR7HtcEZHUEy6PiB3gkqkmceFE0p9x/UTsLW6Q6hOui+oJl091gYuk8nrGDDPyHUwN3Sqmm64Zk0IX94nvmyOdyS3fK00qvex1QA55kKi1fwfC00CUbeNLoP3WYcoVtPoD6O9K1f61AIJv0pT+licKIOVvrENUB/v3jpgTxql5ImJHk4exDroOhk29oXmZy/CWEooOTUZqKbnhe1mhyeiDKmZOXv748fJmJjeIIQEAVlA4IHwBAABwCQCdASooACgAPpE2l0gloqIhLjgMyLASCWUAyn7xdYU1kuBQfG6VZnWpL8BeahQl1d5e+A1rfmvzQEHYESjxIxcg/XQth4egxW16Oop0wKxqkWAA/v6H0+1KFBJAOwNmZ8r5SZJACrwQ+Jw/eQPlO6MqzU/H/dHKBlfGszSUv/hH0PUazFVMV7rukExO/OzXonByFuqA9NcULGsTBRq+A+7xV8mvtQS9EbQNnbh57cHOUo6zo/OfBTZW+MREj7VMWZ/XBk6p98Rjfj8Az/VpC6Oi+UvCVzTNXZRon6bDhM5Dopb+Z578QDuMu6AMXGuEQS7t51vuvTUpRPWw0NDETYSExmj0yrNOhq00xDp+5TEGWbTu2PppOC9qYId+CGCGgs8eOB6Gj9CYFtUZMwh7Gcl6mjWy7pNI0qBl1E8/gel215qRGfBbfZVRPGp4aQC0Lf/4xtfQRehOEtMLAoDu04q6jmsJEVe1ssHegaMMHQb9kL0AIYOR6mcAAA=="
+            alt="Dmytro Nazarenko"
+            loading="lazy"
+            width="40"
+            height="40"
+            class="reviews-foto"
+          />
           <p class="reviewer-name">Dmytro Nazarenko</p>
         </div>
       </li>
     </ul>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-buttons">
+      <div class="swiper-button-prev">
+        <svg width="48" height="48">
+          <use href="/SuperPortfolioTeam/assets/icons-30aff498.svg#icon-review-arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg width="48" height="48">
+          <use href="/SuperPortfolioTeam/assets/icons-30aff498.svg#icon-review-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
   </div>
+  
 </section>
 
       <section id="workTogether">
