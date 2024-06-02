@@ -1,6 +1,6 @@
 .about-me {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+
 }
 
 .about-me-title {
@@ -89,8 +89,7 @@
 @media screen and (min-width: 768px) {
 
     .about-me {
-        margin-top: 62px;
-        margin-bottom: 62px;
+        margin-top: 124px;
     }
 
     .aboutme-title {
@@ -126,7 +125,6 @@
     .about-me-education {
         width: 336px;
         height: 280px;
-
     }
 
     .about-me-list {
@@ -140,8 +138,7 @@
 @media screen and (min-width: 1280px) {
 
     .about-me {
-        margin-top: 82px;
-        margin-bottom: 82px;
+        margin-top: 164px;
     }
 
     .about-me-media {

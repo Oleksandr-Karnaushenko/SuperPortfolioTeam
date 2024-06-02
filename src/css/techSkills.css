@@ -3,8 +3,7 @@
 }
 
 .oll-ribbon {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .ribbon {
@@ -97,14 +96,12 @@
 
 @media screen and (min-width: 768px) {
     .oll-ribbon {
-        margin-top: 62px;
-        margin-bottom: 62px;
+        margin-top: 124px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .oll-ribbon {
-        margin-top: 82px;
-        margin-bottom: 82px;
+        margin-top: 164px;
     }
 }
