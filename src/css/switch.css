@@ -1,0 +1,68 @@
+.switch_container {
+  display: flex;
+}
+#switch {
+  display: none;
+}
+.label {
+  position: relative;
+  height: 25px;
+  width: 70px;
+  background-color: #333;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.label:hover {
+  cursor: pointer;
+}
+#switch:checked + .label {
+  background-color: #fe7f2d;
+}
+.label::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -o-transition: 0.8s ease;
+}
+.fa-sun,
+.fa-moon {
+  font-size: 1.3rem;
+  position: absolute;
+}
+.fa-sun {
+  top: 12%;
+  left: -31%;
+}
+.fa-moon {
+  top: 9%;
+  right: 9%;
+}
+#switch:checked + .label::before {
+  transform: translate(45px);
+  -webkit-transform: translate(45px);
+  -moz-transform: translate(45px);
+  -ms-transform: translate(45px);
+  -o-transform: translate(45px);
+}
+#switch:checked + .label .fa-sun {
+  left: 11%;
+}
+#switch:checked + .label .fa-moon {
+  right: -24%;
+}
+#switch:active + .label::before {
+  width: 35px;
+}

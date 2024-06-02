@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio, Full Stuck Developer" />
+    <meta name="author" content="30 Seconds to Deadline" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/svg+xml" href="/src/public/benefits-icons.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Project</title>
     <link
@@ -12,19 +13,27 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="bg-image">
+  <body>
+    <div class="switch_container">
+      <input type="checkbox" id="switch" />
+      <label for="switch" class="label">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+    </div>
+
     <load ="partials/header.html" />
     <main>
       <load ="partials/hero.html" />
       <load ="partials/aboutMe.html" />
       <load ="partials/techSkills.html" />
-      <load ="partials/myProjects.html" />  
+      <load ="partials/myProjects.html" />
       <load ="partials/benefits.html" />
       <load ="partials/FAQ.html" />
       <load ="partials/reviews.html" />
       <load ="partials/workTogether.html" />
     </main>
-    <load ="partials/footer.html" /> 
+    <load ="partials/footer.html" />
 
     <script type="module" src="./js/main.js"></script>
   </body>
