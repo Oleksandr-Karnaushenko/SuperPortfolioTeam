@@ -5,7 +5,7 @@ import{A as h}from"./assets/vendor-8f98089f.js";(function(){const i=document.cre
              alt="${e.description}">
             <div class="project-card-descr">
               <p class="technologies">${e.technologies}</p>
-              <div class="line-title-link"
+              <div class="line-title-link">
               <h3 class="project-title">${e.description}</h3>
               <a class="link" href="${e.link}" target="_blank">Visit
               <svg class="visit-icon" width="24" height="24">
