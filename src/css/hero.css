@@ -33,7 +33,7 @@
 
 .hero-icon-arrow {
   stroke-width: 2px;
-  stroke: #00b068;
+  fill: #00b068;
   margin-right: 12px;
 }
 
@@ -46,7 +46,7 @@
   color: #292929;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 43%;
   transform: translate(-50%, -50%);
   z-index: 2;
   text-wrap: nowrap;
@@ -58,6 +58,7 @@
   height: 92px;
   background-color: rgba(0, 176, 104, 0.2);
   z-index: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-rectangle:focus,
@@ -82,6 +83,7 @@
 }
 
 .hero-social {
+  margin-top: 16px;
   padding: 32px 0px;
   background-color: #e4e5e6;
 }
@@ -100,9 +102,96 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-social-link:focus,
 .hero-social-link:hover {
   color: #00b068;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 0;
+    margin-bottom: 62px;
+  }
+
+  .hero-title {
+    font-size: 124px;
+    line-height: 1.19355;
+    letter-spacing: 0.01em;
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
+
+  .hero-btn {
+    max-width: 416px;
+  }
+
+  .hero-link {
+    font-size: 20px;
+    line-height: 1.6;
+    left: 35%;
+  }
+
+  .hero-rectangle {
+    width: 261px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-bottom: 88px;
+  }
+
+  .hero-social {
+    padding: 40px 0px;
+  }
+
+  .hero-social-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    margin-bottom: 82px;
+  }
+
+  .hero-wrap-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 72px;
+  }
+
+  .hero-title {
+    max-width: 552px;
+    padding-bottom: 80px;
+  }
+
+  .is-hidden {
+    display: block;
+  }
+
+  .hero-wrap-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  .hero-btn {
+    margin-left: 72px;
+  }
+
+  .hero-icon-arrow {
+    margin-right: 123px;
+  }
+
+  .hero-text {
+    max-width: 592px;
+    padding: 0;
+  }
 }

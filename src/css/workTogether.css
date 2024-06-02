@@ -1,2 +1,136 @@
-.workTogether {
+.work-together-container {
+  background-color: #f0f0f0;
+}
+.title-work-together {
+  font-family: Impact, sans-serif;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  text-align: left;
+  padding-top: 80px;
+}
+
+.title-part {
+  color: #00b068;
+}
+
+.work-text {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  text-align: left;
+  padding-top: 40px;
+}
+.contacts {
+  padding-top: 32px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts-list-item {
+  font-family: poppins, light;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.work-form {
+  padding-top: 40px;
+}
+
+.work-form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.work-form-input {
+  background-color: #e4e5e6;
+  border-radius: 8px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  padding: 16px 12px;
+}
+
+.button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #00b068;
+  font-family: poppins, light;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  color: #f0f0f0;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-together-container {
+    background-image: url(/src/img/bg-images/bgi-tab.webp);
+  }
+
+  .title-work-together {
+    padding-top: 124px;
+    font-size: 108px;
+    max-width: 530px;
+  }
+
+  .work-text {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 488px;
+  }
+
+  .contacts {
+    padding-top: 60px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .button {
+    max-width: 173px;
+  }
+
+  .button:focus {
+    background-color: #009156;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-work-together {
+    padding-top: 164px;
+  }
+  .contacts {
+    padding-top: 80px;
+  }
+  .contacts-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 136px;
+  }
+
+  .work-form {
+    width: 592px;
+  }
 }
