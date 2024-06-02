@@ -13,8 +13,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: black;
-    background: #BCDFD1;
+    background: var(--green-color-bg);
 
 }
 
@@ -62,8 +61,8 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #00B068;
-    background: #E4E5E6;
+    color: var(--green-text-color);
+    background: var(--gray-color-bg);
     transform: rotate(2deg);
     margin-bottom: 80px;
 }
@@ -93,6 +92,7 @@
     width: 8px;
     height: 8px;
     margin-right: 58px;
+    fill: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
