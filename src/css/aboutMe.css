@@ -1,6 +1,6 @@
 .about-me {
-    margin-top: 80px;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .about-me-title {
@@ -40,7 +40,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 40px;
 }
 
 .about-me-education-role {
@@ -81,15 +80,17 @@
 
 .aboutme-text-role {
     padding-left: 8px;
-
 }
+
+
 
 /* --------768px---------- */
 
 @media screen and (min-width: 768px) {
 
     .about-me {
-        margin-top: 124px;
+        padding-top: 62px;
+        padding-bottom: 62px;
     }
 
     .aboutme-title {
@@ -131,6 +132,13 @@
         gap: 16px;
     }
 
+    .about-me-background {
+        width: 336px;
+        height: 252px;
+        background-image: url(/img/bg-images/decor-bg-2.webp);
+        position: absolute;
+    }
+
 }
 
 
@@ -138,7 +146,8 @@
 @media screen and (min-width: 1280px) {
 
     .about-me {
-        margin-top: 164px;
+        padding-top: 82px;
+        padding-bottom: 82px;
     }
 
     .about-me-media {
@@ -156,4 +165,12 @@
         width: 488px;
         height: 488px;
     }
+
+    .about-me-background {
+        width: 384px;
+        height: 288px;
+        margin-top: 40px;
+        margin-left: 104px;
+    }
+
 }
