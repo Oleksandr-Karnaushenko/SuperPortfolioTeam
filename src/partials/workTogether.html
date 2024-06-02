@@ -11,40 +11,66 @@
         <div class="contacts">
           <ul class="contacts-list">
             <li class="contacts-list-item">
-              <a href="tel:+380904567890">+38 090 456 78 90</a>
-            </li>
-            <li class="contacts-list-item">
-              <a href="mailto:lloydjefferson@gmail.com"
-                >lloydjefferson@gmail.com</a
+              <a href="tel:+380904567890" class="contacts-link">
+                <svg class="contacts-list-icon" width="24px" height="24px">
+                  <use href="/img/icons.svg#icon-phone"></use>
+                </svg>
+                +38 090 456 78 90</a
               >
             </li>
             <li class="contacts-list-item">
-              <a href="https://maps.app.goo.gl/pJQ9nj8W71C3vHfy5"></a>USA, New
-              York
+              <a href="mailto:lloydjefferson@gmail.com" class="contacts-link">
+                <svg class="contacts-list-icon" width="24px" height="24px">
+                  <use href="/img/icons.svg#icon-mail"></use>
+                </svg>
+                lloydjefferson@gmail.com</a
+              >
+            </li>
+            <li class="contacts-list-item">
+              <a href="https://maps.app.goo.gl/pJQ9nj8W71C3vHfy5" class="contacts-link">
+                <svg class="contacts-list-icon" width="24px" height="24px">
+                  <use href="/img/icons.svg#icon-gps"></use>
+                </svg>
+                USA, New York</a
+              >
             </li>
           </ul>
         </div>
       </div>
       <div class="work-form">
-        <form class="work-form-item" action="submit">
-          <input
-            class="work-form-input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email*"
-            required
-          />
-          <textarea
-            class="work-form-input"
-            name="message"
-            id="message"
-          >
-Message
-        </textarea
-          >
+        <form class="work-form-item"> 
+          <label for="email" class="work-form-label">
+            <input
+              class="work-form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email*"
+              required
+            />
+          </label>
+          <label for="message">
+            <textarea 
+            class="work-form-input-text" 
+            name="message" 
+            id="message" 
+            placeholder="Message"></textarea>
+          </label>
           <button class="button work-form-item">Send message</button>
         </form>
+      </div>
+      <div class="backdrop is-open">
+        <div class="modal">
+      <button type="button" class="close-modal-btn">
+        <svg class="modal-close-svg" width="24px" height="24px">
+          <use href="/img/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="modal-text">
+      <p class="work-text-green">Thank you for your interest in cooperation!</p>
+      <p>The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    </div>
+    </div>
       </div>
     </div>
   </div>
