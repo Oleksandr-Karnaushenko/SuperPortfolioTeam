@@ -99,7 +99,7 @@ function renderProjects(startIndex, endIndex) {
              alt="${project.description}">
             <div class="project-card-descr">
               <p class="technologies">${project.technologies}</p>
-              <div class="line-title-link"
+              <div class="line-title-link">
               <h3 class="project-title">${project.description}</h3>
               <a class="link" href="${project.link}" target="_blank">Visit
               <svg class="visit-icon" width="24" height="24">

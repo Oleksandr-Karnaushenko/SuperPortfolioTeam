@@ -55,3 +55,13 @@
   font-weight: 700;
   src: url('/fonts/Montserrat-Bold.ttf');
 }
+
+/* Impact Regular */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Impact';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Impact.ttf');
+}

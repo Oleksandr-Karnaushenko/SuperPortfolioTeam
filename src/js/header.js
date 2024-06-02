@@ -14,4 +14,5 @@ burgerMenu.addEventListener('click', event => {
 function toggleBurger() {
   burgerBtn.classList.toggle('open');
   burgerMenu.classList.toggle('hidden');
+  document.body.classList.toggle('stop-scrolling');
 }
