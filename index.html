@@ -12,9 +12,9 @@
     />
     
     <script type="module" crossorigin src="/SuperPortfolioTeam/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-13495c4b.js">
+    <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-a3b214ec.js">
     <link rel="stylesheet" href="/SuperPortfolioTeam/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-b739bdd7.css">
+    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-82e5ff67.css">
   </head>
   <body class="bg-image">
     <header id="header" class="header">
@@ -670,7 +670,7 @@
         </div>
       </div>
       <div class="work-form">
-        <form class="work-form-item"> 
+        <form id="work-form" class="work-form-item"> 
           <label for="email" class="work-form-label">
             <input
               class="work-form-input"
@@ -678,8 +678,13 @@
               id="email"
               name="email"
               placeholder="Your email*"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
               required
             />
+            <svg class="work-together-success" width="14" height="14">
+              <use href="/SuperPortfolioTeam/assets/icons-30aff498.svg#icon-work-together-ok"></use>
+            </svg>
+            <p class="work-together-error-input">Invalid email, try again</p>
           </label>
           <label for="message">
             <textarea 
@@ -687,9 +692,11 @@
             name="message" 
             id="message" 
             placeholder="Message"></textarea>
+            <p class="work-together-error-message">the field must be filled</p>
           </label>
           <button class="button work-form-item">Send message</button>
         </form>
+        <span class="work-together-loader is-hide"></span>
       </div>
       <div class="backdrop">
         <div class="modal">
@@ -699,13 +706,14 @@
         </svg>
       </button>
       <div class="modal-text">
-      <p class="work-text-green">Thank you for your interest in cooperation!</p>
-      <p>The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+      <p class="work-modal-text-green">Thank you for your interest in cooperation!</p>
+      <p class="work-modal-text" >The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
     </div>
     </div>
       </div>
     </div>
   </div>
+  
 </section>
 
     </main>
