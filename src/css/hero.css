@@ -1,11 +1,14 @@
 .hero {
   padding-top: 112px;
   padding-bottom: 40px;
+}
+
+.hero-wrap {
   background-image: url(/img/bg-images/hero-decor-bg-mob.webp);
   background-color: transparent;
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: right top 15px;
+  background-position: right top;
 }
 
 .hero-title {
@@ -120,6 +123,9 @@
   .hero {
     padding-top: 88px;
     padding-bottom: 62px;
+  }
+
+  .hero-wrap {
     background-image: url(/img/bg-images/hero-decor-bg-tab.webp);
   }
 
@@ -165,6 +171,9 @@
   .hero {
     padding-top: 88px;
     padding-bottom: 82px;
+  }
+
+  .hero-wrap {
     background-image: url(/img/bg-images/hero-decor-bg-des.webp);
   }
 
