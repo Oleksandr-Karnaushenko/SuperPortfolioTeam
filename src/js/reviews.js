@@ -29,8 +29,6 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 32,
 });
 
-const nextBtnEl = document.querySelector('.swiper-button-next');
-const prevBtnEL = document.querySelector('.swiper-button-prev');
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
 async function loadReviewsFromBackend() {
