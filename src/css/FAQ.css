@@ -32,10 +32,9 @@ ul .ac {
   border-bottom: 1px solid var(--gray-color-bg);
 }
 
-.ac-border-none {
-  border: none;
+.ac-header.ac-border-none {
+  border-bottom: none;
 }
-
 .accordion-span-class {
   color: var(--green-text-color);
 }
@@ -43,6 +42,7 @@ ul .ac {
 .ac-header-custom {
   background-color: var(--green-color-bg);
   border-radius: 16px 16px 0px 0px;
+  border: none !important;
 }
 
 ul .ac .ac-trigger {
@@ -53,6 +53,7 @@ ul .ac .ac-trigger {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding: 24px 28px 24px 24px;
+  color: var(--text-color);
 }
 .ac-panel {
   background-color: var(--green-color-bg);
@@ -66,6 +67,7 @@ ul .ac .ac-trigger {
   line-height: 150%;
   letter-spacing: 0.03em;
   padding: 0px 28px 24px 24px;
+  color: var(--text-color);
 }
 
 .accordion-container .ac-trigger {
