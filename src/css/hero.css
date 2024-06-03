@@ -11,6 +11,14 @@
   background-position: right top;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-wrap {
+    background-image: url();
+  }
+}
+
 .hero-title {
   font-family: 'Impact', sans-serif;
   font-size: 64px;
@@ -129,6 +137,14 @@
     background-image: url(/img/bg-images/hero-decor-bg-tab.webp);
   }
 
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-wrap {
+      background-image: url();
+    }
+  }
+
   .hero-title {
     font-size: 124px;
     line-height: 1.19355;
@@ -177,11 +193,19 @@
     background-image: url(/img/bg-images/hero-decor-bg-des.webp);
   }
 
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-wrap {
+      background-image: url();
+    }
+  }
+
   .hero-wrap-title {
     display: flex;
     justify-content: space-between;
     gap: 72px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .hero-title {
@@ -196,7 +220,6 @@
   .hero-wrap-text {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
   }
 
   .hero-btn {
@@ -210,5 +233,9 @@
   .hero-text {
     max-width: 592px;
     padding: 0;
+  }
+
+  .hero-social {
+    margin-top: 96px;
   }
 }
