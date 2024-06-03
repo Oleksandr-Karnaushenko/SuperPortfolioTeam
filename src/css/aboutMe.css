@@ -62,14 +62,14 @@
 .about-me-svg {
     margin: 10px;
     display: flex;
-    fill: #00B068;
+    fill: var(--green-text-color);
     height: 4px;
 }
 
 .about-me-svg-icons {
     margin: 10px 6px;
     display: flex;
-    fill: #00B068;
+    fill: var(--green-text-color);
     width: 4px;
     height: 4px;
 }
@@ -180,5 +180,4 @@
         width: 384px;
         height: 448px;
     }
-
 }
