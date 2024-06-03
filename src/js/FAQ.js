@@ -7,6 +7,13 @@ const accordion = new Accordion('.accordion-ul-container', {
   removeButton: true,
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const firstItem = document.querySelector('.accordion-ul-container .ac');
+  if (firstItem) {
+    accordion.open(0);
+  }
+});
+
 function handleAccordionToggle(header) {
   const isActive = header.classList.toggle('ac-header-custom');
   header.classList.toggle('ac-border-none', isActive);
@@ -15,6 +22,18 @@ function handleAccordionToggle(header) {
     svgElement.classList.toggle('rotated', isActive);
   }
 }
+
+function openFirstAccordionItem() {
+  const firstItem = document.querySelector('.ac');
+  if (firstItem) {
+    const header = firstItem.querySelector('.ac-header');
+    if (header) {
+      handleAccordionToggle(header);
+    }
+  }
+}
+
+openFirstAccordionItem();
 
 document.querySelectorAll('.ac-trigger').forEach(trigger => {
   trigger.addEventListener('click', event => {
