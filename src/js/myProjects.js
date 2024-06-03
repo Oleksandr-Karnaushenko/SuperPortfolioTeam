@@ -81,6 +81,11 @@ const images = {
   ).href,
 };
 
+const iconArrow = new URL(
+  '../img/icons.svg#icon-my-projects-visit',
+  import.meta.url
+).href;
+
 const projectsData = [
   {
     projectImage: images.webwallet1x,
@@ -153,6 +158,7 @@ const projectsData = [
     link: 'https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam',
   },
 ];
+
 const projectsContainer = document.querySelector('.projects');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 const perLoad = 3;
@@ -168,14 +174,15 @@ function renderProjects(startIndex, endIndex) {
           <img class="project-image"
              srcset="${project.imgSet}"
              src="${project.projectImage}" 
-             alt="${project.description}">
+             alt="${project.description}"
+             loading="lazy">
             <div class="project-card-descr">
               <p class="technologies">${project.technologies}</p>
               <div class="line-title-link">
               <h3 class="project-title">${project.description}</h3>
               <a class="link" href="${project.link}" target="_blank">Visit
               <svg class="visit-icon" width="24" height="24">
-              <use href="/img/icons.svg#icon-my-projects-visit"></use>
+              <use href="${iconArrow}"></use>
               </svg>
               </a>
               </div>
