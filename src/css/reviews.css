@@ -19,15 +19,12 @@
     flex-direction: column;
     width: 320px;
     border-radius: 16px;
-    background-color: #E4E5E6;
+    background-color: var(--gray-l);
     padding: 32px;
 }
 
-/* .reviews-item:not(:first-child) {
-    display: none;
-} */
-
 .reviews-text {
+    color: var(--text-l);
     width: 256px;
     font-size: 16px;
     font-family: 'Poppins';
@@ -50,6 +47,7 @@
 }
 
 .reviewer-name {
+    color: var(--text-l);
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
@@ -71,6 +69,11 @@
 
 .swiper-button-next {
     display: inline-block;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
 }
 
 /*<----------768px--------->*/
@@ -111,16 +114,11 @@
 
     .reviews-list {
         display: flex;
-        /* gap: 32px; */
     }
 
     .reviews-item {
         width: calc((100% - 32px) / 2);
     }
-
-    /* .reviews-item:nth-child(2) {
-        display: block;
-    } */
 
     .reviews-text {
         width: 528px;
