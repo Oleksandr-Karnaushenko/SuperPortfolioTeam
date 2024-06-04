@@ -15,15 +15,15 @@
     <script type="module" crossorigin src="/SuperPortfolioTeam/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-a3b214ec.js">
     <link rel="stylesheet" href="/SuperPortfolioTeam/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-ac398ea7.css">
+    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-e0b51d12.css">
   </head>
   <body>
     <header id="header" class="header">
-  <section class="container">
+  <div class="container">
     <div class="header-elements">
-      <div class="logo-switch-box">
-        <p class="logo">LLOYD<span>JEFFERSON.</span></p>
+      <a class="logo" href="/">LLOYD<span>JEFFERSON.</span></a>
 
+      <div class="nav-switch-box">
         <div class="switch_container">
           <input type="checkbox" id="switch" />
           <label for="switch" class="label">
@@ -31,15 +31,15 @@
             <i class="fa-solid fa-moon"></i>
           </label>
         </div>
-      </div>
 
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#aboutMe" class="nav-link">About me</a></li>
-          <li><a href="#myProjects" class="nav-link">Projects</a></li>
-          <li><a href="#workTogether" class="nav-link">Contacts</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#aboutMe" class="nav-link">About me</a></li>
+            <li><a href="#myProjects" class="nav-link">Projects</a></li>
+            <li><a href="#workTogether" class="nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="burger-btn">
         <span class="burger-btn-line"></span>
@@ -47,19 +47,21 @@
         <span class="burger-btn-line"></span>
       </div>
     </div>
-
-    <div class="burger-menu hidden">
-      <nav class="burger-nav">
-        <ul>
-          <li><a href="#aboutMe" class="nav-link">About me</a></li>
-          <li><a href="#myProjects" class="nav-link">Projects</a></li>
-          <li><a href="#workTogether" class="nav-link">Contacts</a></li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+  </div>
   
 </header>
+
+<div class="container">
+  <div class="burger-menu hidden">
+    <nav class="burger-nav">
+      <ul>
+        <li><a href="#aboutMe" class="nav-link">About me</a></li>
+        <li><a href="#myProjects" class="nav-link">Projects</a></li>
+        <li><a href="#workTogether" class="nav-link">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
     <main>
       <section id="hero" class="hero">
