@@ -1,49 +1,49 @@
 .work-together-container {
- padding-top: 80px;
- padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 .title-work-together {
-  font-family: Impact, sans-serif;
-  font-size: 64px;
-  line-height: 1.25;
+  font-family: 'Impact', sans-serif;
+  font-size: 52px;
+  line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   text-align: left;
-  padding-top: 80px;
 }
 
 .title-part {
-  color: #00b068;
+  color: --green-text-color;
+}
+
+.content-wrap {
+  margin-top: 40px;
 }
 
 .work-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 18px;
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   text-align: left;
-  padding-top: 40px;
 }
 .contacts {
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
-.contacts-link{
+.contacts-link {
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-color:#00b068;
+  color: --green-text-color;
 }
 
 .contacts-list-icon {
   fill: transparent;
-  stroke:#00b068;
+  stroke: var(--green-t-l);
   margin-right: 16px;
 }
 
@@ -53,18 +53,17 @@ color:#00b068;
   gap: 16px;
 }
 .contacts-list-item {
-  font-family: poppins, light;
+  font-family: 'Poppins', light;
   font-size: 16px;
   letter-spacing: 0.2px;
   line-height: 24px;
 }
 
 .work-form {
-  padding-top: 40px;
+  margin-top: 40px;
+  width: auto;
 }
-.work-form-label {
-  width: 100%;
-}
+
 
 .work-form-item {
   display: flex;
@@ -73,21 +72,28 @@ color:#00b068;
 }
 
 .work-form-input {
-  background-color: #e4e5e6;
+  background-color: var(--gray-l);
   border-radius: 8px;
-  border: 1px solid rgba(251, 251, 251, 0.2);
+  border: 1px solid var(--gray-l);
   padding: 16px 12px;
   width: 100%;
 }
 
 .work-form-input-text {
-  background-color: #e4e5e6;
+  background-color: var(--gray-l);
   border-radius: 8px;
   padding: 16px 12px;
   width: 100%;
-  border: 1px solid rgba(251, 251, 251, 0.2);
+  border: 1px solid var(--gray-l);
   resize: none;
   height: 128px;
+}
+
+.work-form-input:hover,
+.work-form-input:focus,
+.work-form-input-text:hover,
+.work-form-input-text:focus {
+  border: 1px solid var(--gray-h-l);
 }
 
 .button {
@@ -97,17 +103,15 @@ color:#00b068;
   width: 100%;
   border-radius: 8px;
   border: none;
-  background-color: #00b068; 
-  font-family: poppins, light;
+  background-color: var(--green-t-l);
+  font-family: 'Poppins', light;
   font-size: 16px;
   letter-spacing: 0.2px;
   line-height: 24px;
-  color: #f0f0f0;
+  color: var(--bg-l);
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
-
 
 .backdrop {
   width: 100%;
@@ -118,9 +122,10 @@ color:#00b068;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 1000;
 }
 
-.is-open{
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -136,66 +141,51 @@ color:#00b068;
 .modal {
   width: 300px;
   height: 328px;
-position: absolute;
-top: 50%;
-left: 45%;
-background-color: #e4e5e6;
-transform: translate(-50%, -50%);
-border-radius: 16px;
-padding: 48px 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--gray-l);
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 48px 32px;
 }
 
 .close-modal-btn {
-margin-left: auto;
-position: absolute;
-top: 16px;
-right: 16px;
-border: none;
-padding: 0;
-width: 24px;
-height: 24px;
-
+  margin-left: auto;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 .modal-close-svg {
   fill: transparent;
-  stroke: #292929;;
-  background-color: #e4e5e6;
+  stroke: var(--text-l);
+  background-color: var(--gray-l);
 }
 .work-modal-text-green {
-  color:#00b068;
+  color: var(--green-t-l);
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
- font-size: 18px;
- line-height: 1.55556;
- letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
 }
 
 .modal-text {
   display: flex;
   flex-direction: column;
   gap: 16px;
- text-align: center;
-}
-
-.work-together-loader {
-  display: block;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
-  border: 5px solid var(--accent-green);
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
+  text-align: center;
 }
 
 .work-together-success {
   position: absolute;
-  right: 17px;
-  top: 17px;
   fill: #009156;
+  right: 45px;
+  margin-top: 18px;
   display: none;
 }
 
@@ -208,19 +198,32 @@ height: 24px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: rgba(231, 74, 59, 1);
-  margin-top: -28px;
+  margin-top: 217px;
+  position: absolute;
 }
 
 @media screen and (min-width: 768px) {
   .work-together-container {
-    background-image: url(/src/img/bg-images/bgi-tab.webp);
+    padding-top: 62px;
     padding-bottom: 124px;
   }
 
+  .bg-image {
+    background-image: url(/img/bg-images/decor-bg-3.webp);
+    height: 260px;
+    width: 336px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: -104px;
+    margin-left: 380px;
+  }
+
   .title-work-together {
-    padding-top: 124px;
     font-size: 108px;
     max-width: 530px;
+    line-height: 1.15;
   }
 
   .work-text {
@@ -230,7 +233,7 @@ height: 24px;
   }
 
   .contacts {
-    padding-top: 60px;
+    margin-top: 60px;
   }
 
   .contacts-list {
@@ -242,21 +245,26 @@ height: 24px;
     max-width: 173px;
   }
 
-.button:focus,
-.button:hover {
-  background-color: #009156;
-}
+  .button:focus,
+  .button:hover {
+    background-color: #009156;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-
-  .work-together-container{
+  .work-together-container {
+    padding-top: 82px;
     padding-bottom: 164px;
   }
 
-  .title-work-together {
-    padding-top: 164px;
+  .bg-image {
+    height: 408px;
+    width: 526px;
+    margin-top: -144px;
+    margin-left: 690px;
   }
+
   .contacts {
     padding-top: 80px;
   }
