@@ -43,6 +43,9 @@
       </div>
       <div class="work-form">
         <form id="work-form" class="work-form-item">
+          <svg class="work-together-success" width="14" height="14">
+            <use href="/img/icons.svg#icon-work-together-ok"></use>
+          </svg>
           <label for="email" class="work-form-label">
             <input
               class="work-form-input"
@@ -51,11 +54,8 @@
               name="email"
               placeholder="Your email*"
               pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-              required
+    
             />
-            <svg class="work-together-success" width="14" height="14">
-              <use href="/img/icons.svg#icon-work-together-ok"></use>
-            </svg>
           </label>
           <p class="work-together-error-input">Invalid email, try again</p>
           <label for="message">
@@ -70,25 +70,25 @@
           <button class="button work-form-item">Send message</button>
         </form>
       </div>
-      <div class="backdrop">
-        <div class="modal">
-          <button type="button" class="close-modal-btn">
-            <svg class="modal-close-svg" width="24px" height="24px">
-              <use href="/img/icons.svg#icon-x"></use>
-            </svg>
-          </button>
-          <div class="modal-text">
-            <h3 class="work-modal-text-green">
-              Thank you for your interest in cooperation!
-            </h3>
-            <h3 class="work-modal-text">
-              The manager will contact you shortly to discuss further details
-              and opportunities for cooperation. Please stay in touch.
-            </h3>
-          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="backdrop">
+    <div class="modal">
+      <button type="button" class="close-modal-btn">
+        <svg class="modal-close-svg" width="24px" height="24px">
+          <use href="/img/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="modal-text">
+        <h3 class="work-modal-text-green">
+          Thank you for your interest in cooperation!
+        </h3>
+        <h3 class="work-modal-text">
+          The manager will contact you shortly to discuss further details
+          and opportunities for cooperation. Please stay in touch.
+        </h3>
+      </div>
   <script type="module" src="/js/workTogether.js"></script>
 </section>

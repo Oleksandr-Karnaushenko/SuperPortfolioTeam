@@ -10,17 +10,20 @@ const errorInput = document.querySelector('.work-together-error-input');
 const errorMessage = document.querySelector('.work-together-error-message');
 const close = document.querySelector('.close-modal-btn');
 const backdrop = document.querySelector('.backdrop');
-const loader = document.querySelector('.work-together-loader');
 
 
-
-close.addEventListener('click', () => {
+function handleCloseClick() {
   backdrop.classList.remove('is-open');
-});
+  // Remove the event listener after the first click
+  close.removeEventListener('click', handleCloseClick);
+}
+
+close.addEventListener('click', handleCloseClick);
 
 window.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     backdrop.classList.remove('is-open');
+    document.body.classList.toggle('stop-scrolling');
   }
 });
 
@@ -67,7 +70,7 @@ form.addEventListener('submit', e => {
         comment: message.value,
       })
       .then(res => {
-        loader.classList.add('is-hide');
+  
         backdrop.classList.add('is-open');
 
         const title = document.querySelector('.work-modal-text-green');
@@ -82,7 +85,6 @@ form.addEventListener('submit', e => {
         form.reset();
       })
       .catch(error => {
-        loader.classList.add('is-hide');
 
         iziToast.error({
           title: 'Error',
