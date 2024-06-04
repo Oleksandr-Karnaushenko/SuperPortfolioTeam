@@ -1,12 +1,13 @@
 .hero {
   padding-top: 112px;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .hero-wrap {
-  background-image: url(/img/bg-images/hero-decor-bg-mob.webp);
+  background-image: url(/img/bg-images/decor-bg-mob.webp);
   background-color: transparent;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -15,7 +16,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .hero-wrap {
-    background-image: url();
+    background-image: url(/img/bg-images/decor-bg-mob-2x.webp);
   }
 }
 
@@ -71,15 +72,14 @@
   border-radius: 16px;
   width: 165px;
   height: 92px;
-  background-color: var(--green-text-color);
-  opacity: 0.2;
+  background-color: var(--green-color-bg);
   z-index: 1;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:focus .hero-rectangle,
 .hero-btn:hover .hero-rectangle {
-  background-color: var(--green-text-color);
+  background-color: var(--green-hover-color);
   opacity: 0.6;
 }
 
@@ -134,14 +134,15 @@
   }
 
   .hero-wrap {
-    background-image: url(/img/bg-images/hero-decor-bg-tab.webp);
+    background-image: url(/img/bg-images/decor-bg-tab.webp);
+    background-position: left top;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .hero-wrap {
-      background-image: url();
+      background-image: url(/img/bg-images/decor-bg-tab-2x.webp);
     }
   }
 
@@ -190,14 +191,15 @@
   }
 
   .hero-wrap {
-    background-image: url(/img/bg-images/hero-decor-bg-des.webp);
+    background-image: url(/img/bg-images/decor-bg-des.webp);
+    background-position: left 30% top 30%;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .hero-wrap {
-      background-image: url();
+      background-image: url(/img/bg-images/decor-bg-des-2x.webp);
     }
   }
 
