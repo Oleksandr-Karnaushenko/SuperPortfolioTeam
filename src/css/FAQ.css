@@ -92,7 +92,7 @@ ul .ac .ac-trigger {
   display: none;
 }
 
-.img-class {
+.bg-class {
   display: none;
 }
 /* tablet */
@@ -117,7 +117,7 @@ ul .ac .ac-trigger {
     line-height: 160%;
     letter-spacing: 0.03em;
   }
-  .img-class {
+  .bg-class {
     display: none;
   }
 }
