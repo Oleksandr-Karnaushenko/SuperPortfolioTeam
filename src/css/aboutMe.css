@@ -54,8 +54,6 @@
 .about-me-link {
     display: flex;
     gap: 8px;
-    width: 320px;
-
 }
 
 .about-me-svg {
@@ -136,9 +134,17 @@
     .about-me-background {
         width: 336px;
         height: 252px;
-        background-image: url(/img/bg-images/decor-bg-2.webp);
+        background-image: url(/img/bg-images/decor-bg-7.webp);
         position: absolute;
         margin-right: 0;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution:2dppx),
+    (min-resolution: 192dpi) {
+        .about-me-background {
+            background-image: url(/img/bg-images/decor-bg-7-2x.webp);
+        }
     }
 
 }
@@ -173,6 +179,15 @@
         height: 288px;
         margin-top: 40px;
         margin-left: 104px;
+        background-image: url(/img/bg-images/decor-bg-2.webp);
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution:2dppx),
+    (min-resolution: 192dpi) {
+        .about-me-background {
+            background-image: url(/img/bg-images/decor-bg-2x.webp);
+        }
     }
 
     .about-me-image {
