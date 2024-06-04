@@ -1,11 +1,11 @@
 // import Swiper JS
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import axios from 'axios';
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation],
+  modules: [Navigation, Keyboard, Mousewheel],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
