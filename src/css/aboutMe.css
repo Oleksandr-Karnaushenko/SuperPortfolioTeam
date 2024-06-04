@@ -137,6 +137,9 @@
         background-image: url(/img/bg-images/decor-bg-7.webp);
         position: absolute;
         margin-right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     @media screen and (-webkit-min-device-pixel-ratio: 2),
