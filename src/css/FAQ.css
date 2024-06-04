@@ -42,7 +42,7 @@ ul .ac {
 .ac-header-custom {
   background-color: var(--green-color-bg);
   border-radius: 16px 16px 0px 0px;
-  border: none !important;
+  border: none;
 }
 
 ul .ac .ac-trigger {
@@ -81,6 +81,7 @@ ul .ac .ac-trigger {
   width: 24px;
   height: 24px;
   transition: transform 0.3s ease;
+  fill: var(--text-color);
 }
 
 .icon-FAQ-arrow.rotated {
@@ -127,6 +128,7 @@ ul .ac .ac-trigger {
     padding-top: 82px;
     padding-bottom: 82px;
   }
+
   .accordion-container {
     max-height: 610px;
   }
