@@ -1,5 +1,5 @@
 .techskills {
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -61,7 +61,6 @@
     color: var(--green-text-color);
     background: var(--gray-color-bg);
     transform: rotate(2deg);
-    margin-bottom: 80px;
 }
 
 .transparent-skills {
@@ -93,14 +92,14 @@
 }
 
 @media screen and (min-width: 768px) {
-    .oll-ribbon {
+    .techskills {
         padding-top: 62px;
         padding-bottom: 62px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .oll-ribbon {
+    .techskills {
         padding-top: 82px;
         padding-bottom: 82px;
     }
