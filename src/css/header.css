@@ -7,19 +7,22 @@ html {
   overflow: hidden;
 }
 
+.header {
+  padding: 20px 0;
+}
+
 .header-elements {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   z-index: 50;
   position: relative;
 }
 
-.logo-switch-box {
+.nav-switch-box {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 40px;
 }
 
 .logo {
@@ -57,7 +60,7 @@ html {
   height: 100vh;
 
   background-color: var(--background);
-  background-image: url(../img/bg-images/decor-bg-1.webp);
+  background-image: url(/img/bg-images/decor-bg-mob.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,6 +75,13 @@ html {
 }
 .burger-menu.hidden {
   transform: translateY(-100%);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .burger-menu {
+    background-image: url(/img/bg-images/decor-bg-mob-2x.webp);
+  }
 }
 
 .burger-btn {
