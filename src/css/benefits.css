@@ -148,14 +148,23 @@
     .benefits-background {
         position: relative; 
     }
-    .benefits-img {
-        display: block;
-        max-width: 506px;
-        height: 338px;
-        margin-right: auto;
+    .benefits-background {
+        width: 506px;
+        height: 348px;
+        background-image: url(/img/bg-images/decor-bg-3.webp);
         position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-245px, -140px); 
+        margin-right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transform: translate(825px, -95px);
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution:2dppx),
+    (min-resolution: 192dpi) {
+        .benefits-background {
+            background-image: url(/img/bg-images/decor-bg-3.webp);
+        }
     }
 }
