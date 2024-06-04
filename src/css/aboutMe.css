@@ -8,7 +8,7 @@
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--text-1);
+    color: var(--text-color);
 }
 
 .about-me-span {
@@ -18,7 +18,6 @@
 .about-me-image {
     border-radius: 16px;
     margin-top: 40px;
-    width: 320px;
     height: 374px;
 }
 

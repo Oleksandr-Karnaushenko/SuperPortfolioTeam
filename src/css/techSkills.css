@@ -1,8 +1,5 @@
 .techskills {
     width: 100vw;
-}
-
-.oll-ribbon {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -25,7 +22,7 @@
 
 .ribbon-list {
     display: flex;
-    gap: 56px;
+    gap: 20px;
     flex-shrink: 0;
     margin: 0;
     padding: 32px 0px;
@@ -41,7 +38,7 @@
     border-radius: 2px;
     width: 8px;
     height: 8px;
-    margin-right: 58px;
+    margin-right: 20px;
     fill: var(--green-text-color);
 }
 
@@ -75,7 +72,7 @@
 
 .transparent-list {
     display: flex;
-    gap: 56px;
+    gap: 20px;
     flex-shrink: 0;
     margin: 0;
     padding: 32px 0px;
@@ -91,7 +88,7 @@
     border-radius: 2px;
     width: 8px;
     height: 8px;
-    margin-right: 58px;
+    margin-right: 20px;
     fill: var(--text-color);
 }
 
