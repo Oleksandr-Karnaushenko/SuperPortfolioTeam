@@ -60,8 +60,7 @@ form.addEventListener('submit', e => {
   }
 
   if (input.value.trim() !== '' && message.value.trim() !== '') {
-    loader.classList.remove('is-hide');
-
+    
     axios
       .post('https://portfolio-js.b.goit.study/api/requests', {
         email: input.value,
