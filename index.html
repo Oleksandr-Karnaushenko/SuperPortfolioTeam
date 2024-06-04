@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/SuperPortfolioTeam/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/SuperPortfolioTeam/assets/vendor-8ad7c985.js">
     <link rel="stylesheet" href="/SuperPortfolioTeam/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-93b4d57a.css">
+    <link rel="stylesheet" href="/SuperPortfolioTeam/assets/index-0e34253f.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -626,8 +626,9 @@
   
 </section>
 
-      <section id="workTogether">
-  <div class="container work-together-container">
+      <section id="workTogether" class="work-together-container">
+  <div class="container">
+  <div class="bg-image"></div>
     <h2 class="title-work-together">
       Let's <span class="title-part">work together</span>
     </h2>
@@ -655,7 +656,10 @@
               >
             </li>
             <li class="contacts-list-item">
-              <a href="https://maps.app.goo.gl/pJQ9nj8W71C3vHfy5" class="contacts-link">
+              <a
+                href="https://maps.app.goo.gl/pJQ9nj8W71C3vHfy5"
+                class="contacts-link"
+              >
                 <svg class="contacts-list-icon" width="24px" height="24px">
                   <use href="/SuperPortfolioTeam/assets/icons-cc91dd3e.svg#icon-gps"></use>
                 </svg>
@@ -666,7 +670,10 @@
         </div>
       </div>
       <div class="work-form">
-        <form id="work-form" class="work-form-item"> 
+        <form id="work-form" class="work-form-item">
+          <svg class="work-together-success" width="14" height="14">
+            <use href="/SuperPortfolioTeam/assets/icons-cc91dd3e.svg#icon-work-together-ok"></use>
+          </svg>
           <label for="email" class="work-form-label">
             <input
               class="work-form-input"
@@ -675,40 +682,42 @@
               name="email"
               placeholder="Your email*"
               pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-              required
+    
             />
-            <svg class="work-together-success" width="14" height="14">
-              <use href="/SuperPortfolioTeam/assets/icons-cc91dd3e.svg#icon-work-together-ok"></use>
-            </svg>
-            <p class="work-together-error-input">Invalid email, try again</p>
           </label>
+          <p class="work-together-error-input">Invalid email, try again</p>
           <label for="message">
-            <textarea 
-            class="work-form-input-text" 
-            name="message" 
-            id="message" 
-            placeholder="Message"></textarea>
-            <p class="work-together-error-message">the field must be filled</p>
+            <textarea
+              class="work-form-input-text"
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
           </label>
+          <p class="work-together-error-message">the field must be filled</p>
           <button class="button work-form-item">Send message</button>
         </form>
-        <span class="work-together-loader is-hide"></span>
       </div>
-      <div class="backdrop">
-        <div class="modal">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop">
+    <div class="modal">
       <button type="button" class="close-modal-btn">
         <svg class="modal-close-svg" width="24px" height="24px">
           <use href="/SuperPortfolioTeam/assets/icons-cc91dd3e.svg#icon-x"></use>
         </svg>
       </button>
       <div class="modal-text">
-      <p class="work-modal-text-green">Thank you for your interest in cooperation!</p>
-      <p class="work-modal-text" >The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
-    </div>
-    </div>
+        <h3 class="work-modal-text-green">
+          Thank you for your interest in cooperation!
+        </h3>
+        <h3 class="work-modal-text">
+          The manager will contact you shortly to discuss further details
+          and opportunities for cooperation. Please stay in touch.
+        </h3>
       </div>
-    </div>
-  </div>
   
 </section>
 
