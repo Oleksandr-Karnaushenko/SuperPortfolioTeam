@@ -1,4 +1,4 @@
-[logo](https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam/blob/main/assets/team-logo.PNG)
+![logo](https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam/blob/main/assets/team-logo.PNG)
 
 # Witamy, jesteśmy zespołem 30 Seconds to DEADline.
 
