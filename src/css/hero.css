@@ -10,7 +10,9 @@
   background-repeat: no-repeat;
   background-position: right top;
 }
-
+.hero-wrap-title {
+  margin-bottom: 40px;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
@@ -27,7 +29,6 @@
   text-transform: uppercase;
   color: var(--text-color);
   text-align: left;
-  padding-bottom: 40px;
 }
 
 .hero-title span {
@@ -144,12 +145,13 @@
       background-image: url(/img/bg-images/decor-bg-tab-2x.webp);
     }
   }
-
+  .hero-wrap-title {
+    margin-bottom: 60px;
+  }
   .hero-title {
     font-size: 124px;
     line-height: 1.19355;
     letter-spacing: 0.01em;
-    padding-bottom: 60px;
   }
 
   .hero-btn {

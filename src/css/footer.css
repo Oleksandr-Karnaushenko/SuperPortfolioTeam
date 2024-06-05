@@ -6,14 +6,13 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 40px;
 }
 
 .footer-nav > ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  margin-bottom: 40px;
 }
 
 .copyright {
@@ -24,7 +23,6 @@
   .footer-nav > ul {
     flex-direction: row;
     gap: 40px;
-    margin-bottom: 40px;
   }
   .copyright {
     text-align: right;

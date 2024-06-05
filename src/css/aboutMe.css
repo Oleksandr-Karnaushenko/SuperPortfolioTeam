@@ -1,201 +1,196 @@
 .about-me {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .about-me-title {
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-color);
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-family: Impact;
 }
 
 .about-me-span {
-    color: var(--green-text-color);
+  color: var(--green-text-color);
 }
 
 .about-me-image {
-    border-radius: 16px;
-    margin-top: 40px;
-    height: 374px;
+  border-radius: 16px;
+  margin-top: 40px;
+  height: 374px;
 }
 
 .aboutme-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    margin-top: 40px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  margin-top: 40px;
 }
 
 .about-me-text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about-me-education-role {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .about-me-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .about-me-link {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .about-me-svg {
-    margin: 10px;
-    display: flex;
-    fill: var(--green-text-color);
-    height: 4px;
+  margin: 10px;
+  display: flex;
+  fill: var(--green-text-color);
+  height: 4px;
 }
 
 .about-me-svg-icons {
-    margin: 10px 6px;
-    display: flex;
-    fill: var(--green-text-color);
-    width: 4px;
-    height: 4px;
+  margin: 10px 6px;
+  display: flex;
+  fill: var(--green-text-color);
+  width: 4px;
+  height: 4px;
 }
 
 .aboutme-text-education {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .aboutme-text-role {
-    padding-left: 8px;
+  padding-left: 8px;
 }
-
-
 
 /* --------768px---------- */
 
 @media screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
 
-    .about-me {
-        padding-top: 62px;
-        padding-bottom: 62px;
-    }
+  .aboutme-title {
+    margin-top: 0;
+  }
 
-    .aboutme-title {
-        margin-top: 0;
-    }
+  .about-me-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+  }
 
-    .about-me-title {
-        font-size: 108px;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
-        margin-bottom: 40px;
-    }
+  .about-me-media {
+    display: flex;
+    gap: 32px;
+  }
 
-    .about-me-media {
-        display: flex;
-        gap: 32px;
-    }
+  .about-me-bio {
+    width: 336px;
+    height: 680px;
+  }
 
-    .about-me-bio {
-        width: 336px;
-        height: 680px;
-    }
+  .about-me-image {
+    margin-top: 408px;
+    width: 336px;
+    height: 392px;
+  }
 
-    .about-me-image {
-        margin-top: 408px;
-        width: 336px;
-        height: 392px;
-    }
+  .about-me-education-role {
+    display: flex;
+    gap: 32px;
+  }
 
-    .about-me-education-role {
-        display: flex;
-        gap: 32px;
-    }
+  .about-me-education {
+    width: 336px;
+    height: 280px;
+  }
 
-    .about-me-education {
-        width: 336px;
-        height: 280px;
-    }
+  .about-me-list {
+    gap: 16px;
+  }
 
-    .about-me-list {
-        gap: 16px;
-    }
+  .about-me-background {
+    width: 336px;
+    height: 252px;
+    background-image: url(/img/bg-images/decor-bg-7.webp);
+    position: absolute;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
-    .about-me-background {
-        width: 336px;
-        height: 252px;
-        background-image: url(/img/bg-images/decor-bg-7.webp);
-        position: absolute;
-        margin-right: 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution:2dppx),
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-        .about-me-background {
-            background-image: url(/img/bg-images/decor-bg-7-2x.webp);
-        }
+    .about-me-background {
+      background-image: url(/img/bg-images/decor-bg-7-2x.webp);
     }
-
+  }
 }
-
 
 /* --------1280px--------- */
 @media screen and (min-width: 1280px) {
+  .about-me {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
 
-    .about-me {
-        padding-top: 82px;
-        padding-bottom: 82px;
-    }
+  .about-me-media {
+    padding-left: 208px;
+    gap: 136px;
+  }
 
-    .about-me-media {
-        padding-left: 208px;
-        gap: 136px;
-    }
+  .about-me-education-role {
+    margin-left: 208px;
+    margin-top: 80px;
+    gap: 136px;
+  }
 
-    .about-me-education-role {
-        margin-left: 208px;
-        margin-top: 80px;
-        gap: 136px;
-    }
+  .about-me-bio {
+    width: 488px;
+    height: 488px;
+  }
 
-    .about-me-bio {
-        width: 488px;
-        height: 488px;
-    }
+  .about-me-background {
+    width: 384px;
+    height: 288px;
+    margin-top: 40px;
+    margin-left: 104px;
+    background-image: url(/img/bg-images/decor-bg-2.webp);
+  }
 
-    .about-me-background {
-        width: 384px;
-        height: 288px;
-        margin-top: 40px;
-        margin-left: 104px;
-        background-image: url(/img/bg-images/decor-bg-2.webp);
-    }
-
-    @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution:2dppx),
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-        .about-me-background {
-            background-image: url(/img/bg-images/decor-bg-2x.webp);
-        }
+    .about-me-background {
+      background-image: url(/img/bg-images/decor-bg-2x.webp);
     }
+  }
 
-    .about-me-image {
-        width: 384px;
-        height: 448px;
-        margin-top: 272px;
-    }
+  .about-me-image {
+    width: 384px;
+    height: 448px;
+    margin-top: 272px;
+  }
 }

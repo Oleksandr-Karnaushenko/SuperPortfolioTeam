@@ -1,4 +1,4 @@
-[logo](/assets/team-logo.png)
+[logo](https://github.com/Oleksandr-Karnaushenko/SuperPortfolioTeam/blob/main/assets/team-logo.PNG)
 
 # Hello, we are 30 Seconds to DEADline team.
 
@@ -15,14 +15,14 @@ the future.
 ## Our team:
 
 Team lead: Oleksandr Karnaushenko;  
-Scrum master: Владислав Галицький;  
+Scrum master: Vladyslav Halytskyi;  
 Section Header: Andriy Thorenko;  
 Section Hero: Yevheniia Yakymenko;  
 Section About me: Anton Yashchenko;  
 Section TechSkills: Anton Yashchenko;  
 Section My Project: Ihor Matviienko;  
 Section Benefits: Oksana Fedorii;  
-Section FAQ: Владислав Галицький;  
+Section FAQ: Vladyslav Halytskyi;  
 Section Reviews: Yana Drozdova;  
 Section Work together: Yuliia Markovska;  
 Section Footer: Andriy Thorenko;
