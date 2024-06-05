@@ -27,20 +27,14 @@
 .benefit-icon {
   width: 48px;
   height: 48px;
-  background-color: var(--green-text-color);
-  opacity: 0.1;
+  background-color: rgba(0, 176, 104, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   margin-bottom: 16px;
-}
-.benefit-icon-svg {
-  stroke-opacity: 1;
-  fill: black;
-  stroke: black;
-  fill-opacity: 1;
-  opacity: 1;
+  fill: none;
+  stroke: var(--green-text-color);
 }
 
 .benefit-list-topic {

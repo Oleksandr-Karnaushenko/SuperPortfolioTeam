@@ -92,9 +92,6 @@ ul .ac .ac-trigger {
   display: none;
 }
 
-.bg-class {
-  display: none;
-}
 /* tablet */
 @media screen and (min-width: 768px) {
   .faq-container {
@@ -116,9 +113,6 @@ ul .ac .ac-trigger {
     font-size: 20px;
     line-height: 160%;
     letter-spacing: 0.03em;
-  }
-  .bg-class {
-    display: none;
   }
 }
 
@@ -160,8 +154,7 @@ ul .ac .ac-trigger {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: block;
-    max-width: 526px;
+    width: 526px;
     height: 408px;
     padding-right: 0px;
     margin-left: 0;
@@ -172,7 +165,7 @@ ul .ac .ac-trigger {
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .bg-class {
-      background-image: url(/img/bg-images/decor-bg-4@2x.webp);
+      background-image: url(/img/bg-images/decor-bg-4-2x.webp);
     }
   }
 }
