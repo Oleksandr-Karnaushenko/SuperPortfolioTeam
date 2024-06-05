@@ -1,4 +1,4 @@
-#Hello, we are 30 Seconds to DEADline team. ![logo](./assets/team-logo.png)
+![logo](./assets/team-logo.png) #Hello, we are 30 Seconds to DEADline team.
 
 The goal of the project was to create a responsive web page according to the
 layout with using JS. We were given 6 days in total. On the first day, we
