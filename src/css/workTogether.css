@@ -267,7 +267,7 @@
   }
 
   .contacts {
-    padding-top: 80px;
+    margin-top: 120px;
   }
   .contacts-list {
     flex-direction: column;
@@ -282,5 +282,8 @@
 
   .work-form {
     width: 592px;
+    margin-top: 0;
   }
+
+
 }
