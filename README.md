@@ -20,7 +20,7 @@ Section Header: Andriy Thorenko;
 Section Hero: Yevheniia Yakymenko;  
 Section About me: Anton Yashchenko;  
 Section TechSkills: Anton Yashchenko;  
-Section My Project: Ihor Matviienko;  
+Section My Projects: Ihor Matviienko;  
 Section Benefits: Oksana Fedorii;  
 Section FAQ: Vladyslav Halytskyi;  
 Section Reviews: Yana Drozdova;  
