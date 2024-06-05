@@ -42,7 +42,7 @@ ul .ac {
 .ac-header-custom {
   background-color: var(--green-color-bg);
   border-radius: 16px 16px 0px 0px;
-  border: none !important;
+  border: none;
 }
 
 ul .ac .ac-trigger {
@@ -81,6 +81,7 @@ ul .ac .ac-trigger {
   width: 24px;
   height: 24px;
   transition: transform 0.3s ease;
+  fill: var(--text-color);
 }
 
 .icon-FAQ-arrow.rotated {
@@ -91,7 +92,7 @@ ul .ac .ac-trigger {
   display: none;
 }
 
-.img-class {
+.bg-class {
   display: none;
 }
 /* tablet */
@@ -116,7 +117,7 @@ ul .ac .ac-trigger {
     line-height: 160%;
     letter-spacing: 0.03em;
   }
-  .img-class {
+  .bg-class {
     display: none;
   }
 }
@@ -127,6 +128,7 @@ ul .ac .ac-trigger {
     padding-top: 82px;
     padding-bottom: 82px;
   }
+
   .accordion-container {
     max-height: 610px;
   }
@@ -153,12 +155,24 @@ ul .ac .ac-trigger {
     letter-spacing: 0.03em;
     padding-right: 56px;
   }
-  .img-class {
+  .bg-class {
+    background-image: url(/img/bg-images/decor-bg-4.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: block;
     max-width: 526px;
     height: 408px;
     padding-right: 0px;
     margin-left: 0;
     margin-right: auto;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .bg-class {
+      background-image: url(/img/bg-images/decor-bg-4@2x.webp);
+    }
   }
 }
