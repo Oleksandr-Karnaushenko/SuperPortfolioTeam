@@ -1,4 +1,6 @@
-![logo](/assets/team-logo.png) #Hello, we are 30 Seconds to DEADline team.
+[logo](/assets/team-logo.png)
+
+# Hello, we are 30 Seconds to DEADline team.
 
 The goal of the project was to create a responsive web page according to the
 layout with using JS. We were given 6 days in total. On the first day, we
@@ -10,16 +12,23 @@ the future.
 
 ---
 
-##Our team:  
+## Our team:
+
 Team lead: Oleksandr Karnaushenko;  
 Scrum master: Владислав Галицький;  
 Section Header: Andriy Thorenko;  
 Section Hero: Yevheniia Yakymenko;  
-Section About us: Anton Yashchenko;  
+Section About me: Anton Yashchenko;  
 Section TechSkills: Anton Yashchenko;  
-Section My Porject: Ihor Matviienko;  
+Section My Project: Ihor Matviienko;  
 Section Benefits: Oksana Fedorii;  
 Section FAQ: Владислав Галицький;  
 Section Reviews: Yana Drozdova;  
 Section Work together: Yuliia Markovska;  
 Section Footer: Andriy Thorenko;
+
+---
+
+## Design Mockup in Figma:
+
+[Mockup](<https://www.figma.com/design/VU9pCPEZEOzfkGUXZsjSmc/Portfolio-2.0-(Copy)?node-id=2089-632&t=dz3OujlUnoUZ46h4-0>)
