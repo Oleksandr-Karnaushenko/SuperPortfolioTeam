@@ -22,7 +22,7 @@ Sekcja About me: Anton Yashchenko;
 Sekcja Tech Skills: Anton Yashchenko;  
 Sekcja My Projects: Ihor Matviienko;  
 Sekcja Benefits: Oksana Fedorii;  
-Sekcja FAQ: Владислав Галицький;  
+Sekcja FAQ: Vladyslav Halytskyi;  
 Sekcja Reviews: Yana Drozdova;  
 Sekcja Work together: Yuliia Markovska;  
 Sekcja Footer: Andriy Thorenko;
